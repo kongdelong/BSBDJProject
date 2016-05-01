@@ -10,6 +10,19 @@
 
 @implementation UIView (XLExtension)
 
+- (void)setSize:(CGSize)size
+{
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
+- (CGSize)size
+{
+    return self.frame.size;
+}
+
+
 - (void)setWidth:(CGFloat)width
 {
     CGRect frame = self.frame;

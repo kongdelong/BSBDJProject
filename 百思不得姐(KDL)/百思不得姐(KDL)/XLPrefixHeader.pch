@@ -12,5 +12,20 @@
 
 #import "UIView+XLExtension.h"
 
+#ifdef DEBUG
+#define XLLog(...) NSLog(__VA_ARGS__)
+#else
+#define XLLog(...)
+#endif
+
+#define XLLogFunc XLLog(@"%s", __func__)
+
+
+
+
+
+
+
+
 
 #endif

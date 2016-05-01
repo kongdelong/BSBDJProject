@@ -98,8 +98,6 @@
 			children = (
 				14523C451CD6521C00F44384 /* AppDelegate.h */,
 				14523C461CD6521C00F44384 /* AppDelegate.m */,
-				14523C671CD652EC00F44384 /* XLTabBarViewController.h */,
-				14523C681CD652EC00F44384 /* XLTabBarViewController.m */,
 				14523C6A1CD656A600F44384 /* XLEssenceViewController.h */,
 				14523C6B1CD656A600F44384 /* XLEssenceViewController.m */,
 				14523C6D1CD656BB00F44384 /* XLNewViewController.h */,
@@ -108,6 +106,8 @@
 				14523C711CD656CE00F44384 /* XLFriendTrendsViewController.m */,
 				14523C731CD656E400F44384 /* XLMeViewController.h */,
 				14523C741CD656E400F44384 /* XLMeViewController.m */,
+				14523C671CD652EC00F44384 /* XLTabBarViewController.h */,
+				14523C681CD652EC00F44384 /* XLTabBarViewController.m */,
 				14523C761CD65C2A00F44384 /* XLTabBar.h */,
 				14523C771CD65C2A00F44384 /* XLTabBar.m */,
 				14523C791CD6624000F44384 /* UIView+XLExtension.h */,
@@ -423,6 +423,7 @@
 				14523C631CD6521C00F44384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14523C641CD6521C00F44384 /* Build configuration list for PBXNativeTarget "百思不得姐(KDL)UITests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				14523C661CD6521C00F44384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
