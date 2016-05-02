@@ -11,6 +11,7 @@
 
 
 #import "UIView+XLExtension.h"
+#import "UIBarButtonItem+XLExtension.h"
 
 #ifdef DEBUG
 #define XLLog(...) NSLog(__VA_ARGS__)

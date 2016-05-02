@@ -11,13 +11,14 @@
 		14523C471CD6521C00F44384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C461CD6521C00F44384 /* AppDelegate.m */; };
 		14523C4F1CD6521C00F44384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14523C4E1CD6521C00F44384 /* Assets.xcassets */; };
 		14523C5D1CD6521C00F44384 /* ______KDL_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C5C1CD6521C00F44384 /* ______KDL_UITests.m */; };
-		14523C691CD652EC00F44384 /* XLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C681CD652EC00F44384 /* XLTabBarViewController.m */; };
-		14523C6C1CD656A600F44384 /* XLEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C6B1CD656A600F44384 /* XLEssenceViewController.m */; };
-		14523C6F1CD656BB00F44384 /* XLNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C6E1CD656BB00F44384 /* XLNewViewController.m */; };
-		14523C721CD656CE00F44384 /* XLFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C711CD656CE00F44384 /* XLFriendTrendsViewController.m */; };
-		14523C751CD656E400F44384 /* XLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C741CD656E400F44384 /* XLMeViewController.m */; };
-		14523C781CD65C2A00F44384 /* XLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C771CD65C2A00F44384 /* XLTabBar.m */; };
-		14523C7B1CD6624000F44384 /* UIView+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C7A1CD6624000F44384 /* UIView+XLExtension.m */; };
+		14F0163E1CD70BD000723793 /* XLEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0161D1CD70BD000723793 /* XLEssenceViewController.m */; };
+		14F0163F1CD70BD000723793 /* XLFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016231CD70BD000723793 /* XLFriendTrendsViewController.m */; };
+		14F016401CD70BD000723793 /* XLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016291CD70BD000723793 /* XLMeViewController.m */; };
+		14F016411CD70BD000723793 /* XLNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0162F1CD70BD000723793 /* XLNewViewController.m */; };
+		14F016421CD70BD000723793 /* UIBarButtonItem+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016351CD70BD000723793 /* UIBarButtonItem+XLExtension.m */; };
+		14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016371CD70BD000723793 /* UIView+XLExtension.m */; };
+		14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0163A1CD70BD000723793 /* XLTabBarViewController.m */; };
+		14F016451CD70BD000723793 /* XLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0163D1CD70BD000723793 /* XLTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,29 +33,31 @@
 
 /* Begin PBXFileReference section */
 		14523C3F1CD6521C00F44384 /* 百思不得姐(KDL).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐(KDL).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14523C431CD6521C00F44384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14523C451CD6521C00F44384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		14523C461CD6521C00F44384 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14523C431CD6521C00F44384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		14523C451CD6521C00F44384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		14523C461CD6521C00F44384 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		14523C4E1CD6521C00F44384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14523C531CD6521C00F44384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14523C581CD6521C00F44384 /* 百思不得姐(KDL)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐(KDL)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14523C5C1CD6521C00F44384 /* ______KDL_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______KDL_UITests.m"; sourceTree = "<group>"; };
 		14523C5E1CD6521C00F44384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14523C671CD652EC00F44384 /* XLTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTabBarViewController.h; sourceTree = "<group>"; };
-		14523C681CD652EC00F44384 /* XLTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTabBarViewController.m; sourceTree = "<group>"; };
-		14523C6A1CD656A600F44384 /* XLEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLEssenceViewController.h; sourceTree = "<group>"; };
-		14523C6B1CD656A600F44384 /* XLEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLEssenceViewController.m; sourceTree = "<group>"; };
-		14523C6D1CD656BB00F44384 /* XLNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNewViewController.h; sourceTree = "<group>"; };
-		14523C6E1CD656BB00F44384 /* XLNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNewViewController.m; sourceTree = "<group>"; };
-		14523C701CD656CE00F44384 /* XLFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFriendTrendsViewController.h; sourceTree = "<group>"; };
-		14523C711CD656CE00F44384 /* XLFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFriendTrendsViewController.m; sourceTree = "<group>"; };
-		14523C731CD656E400F44384 /* XLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMeViewController.h; sourceTree = "<group>"; };
-		14523C741CD656E400F44384 /* XLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMeViewController.m; sourceTree = "<group>"; };
-		14523C761CD65C2A00F44384 /* XLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTabBar.h; sourceTree = "<group>"; };
-		14523C771CD65C2A00F44384 /* XLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTabBar.m; sourceTree = "<group>"; };
-		14523C791CD6624000F44384 /* UIView+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XLExtension.h"; sourceTree = "<group>"; };
-		14523C7A1CD6624000F44384 /* UIView+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XLExtension.m"; sourceTree = "<group>"; };
-		14523C7C1CD662D600F44384 /* XLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLPrefixHeader.pch; sourceTree = "<group>"; };
+		14523C7C1CD662D600F44384 /* XLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XLPrefixHeader.pch; path = ../../XLPrefixHeader.pch; sourceTree = "<group>"; };
+		14F0161C1CD70BD000723793 /* XLEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLEssenceViewController.h; sourceTree = "<group>"; };
+		14F0161D1CD70BD000723793 /* XLEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLEssenceViewController.m; sourceTree = "<group>"; };
+		14F016221CD70BD000723793 /* XLFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFriendTrendsViewController.h; sourceTree = "<group>"; };
+		14F016231CD70BD000723793 /* XLFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFriendTrendsViewController.m; sourceTree = "<group>"; };
+		14F016281CD70BD000723793 /* XLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMeViewController.h; sourceTree = "<group>"; };
+		14F016291CD70BD000723793 /* XLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMeViewController.m; sourceTree = "<group>"; };
+		14F0162E1CD70BD000723793 /* XLNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNewViewController.h; sourceTree = "<group>"; };
+		14F0162F1CD70BD000723793 /* XLNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNewViewController.m; sourceTree = "<group>"; };
+		14F016341CD70BD000723793 /* UIBarButtonItem+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XLExtension.h"; sourceTree = "<group>"; };
+		14F016351CD70BD000723793 /* UIBarButtonItem+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XLExtension.m"; sourceTree = "<group>"; };
+		14F016361CD70BD000723793 /* UIView+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XLExtension.h"; sourceTree = "<group>"; };
+		14F016371CD70BD000723793 /* UIView+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XLExtension.m"; sourceTree = "<group>"; };
+		14F016391CD70BD000723793 /* XLTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTabBarViewController.h; sourceTree = "<group>"; };
+		14F0163A1CD70BD000723793 /* XLTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTabBarViewController.m; sourceTree = "<group>"; };
+		14F0163C1CD70BD000723793 /* XLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTabBar.h; sourceTree = "<group>"; };
+		14F0163D1CD70BD000723793 /* XLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,22 +99,7 @@
 		14523C411CD6521C00F44384 /* 百思不得姐(KDL) */ = {
 			isa = PBXGroup;
 			children = (
-				14523C451CD6521C00F44384 /* AppDelegate.h */,
-				14523C461CD6521C00F44384 /* AppDelegate.m */,
-				14523C6A1CD656A600F44384 /* XLEssenceViewController.h */,
-				14523C6B1CD656A600F44384 /* XLEssenceViewController.m */,
-				14523C6D1CD656BB00F44384 /* XLNewViewController.h */,
-				14523C6E1CD656BB00F44384 /* XLNewViewController.m */,
-				14523C701CD656CE00F44384 /* XLFriendTrendsViewController.h */,
-				14523C711CD656CE00F44384 /* XLFriendTrendsViewController.m */,
-				14523C731CD656E400F44384 /* XLMeViewController.h */,
-				14523C741CD656E400F44384 /* XLMeViewController.m */,
-				14523C671CD652EC00F44384 /* XLTabBarViewController.h */,
-				14523C681CD652EC00F44384 /* XLTabBarViewController.m */,
-				14523C761CD65C2A00F44384 /* XLTabBar.h */,
-				14523C771CD65C2A00F44384 /* XLTabBar.m */,
-				14523C791CD6624000F44384 /* UIView+XLExtension.h */,
-				14523C7A1CD6624000F44384 /* UIView+XLExtension.m */,
+				14F016191CD70BD000723793 /* Classes */,
 				14523C421CD6521C00F44384 /* Supporting Files */,
 			);
 			path = "百思不得姐(KDL)";
@@ -122,8 +110,6 @@
 			children = (
 				14523C4E1CD6521C00F44384 /* Assets.xcassets */,
 				14523C531CD6521C00F44384 /* Info.plist */,
-				14523C431CD6521C00F44384 /* main.m */,
-				14523C7C1CD662D600F44384 /* XLPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -135,6 +121,193 @@
 				14523C5E1CD6521C00F44384 /* Info.plist */,
 			);
 			path = "百思不得姐(KDL)UITests";
+			sourceTree = "<group>";
+		};
+		14F016191CD70BD000723793 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14F0161A1CD70BD000723793 /* Essence(精华) */,
+				14F016201CD70BD000723793 /* FriendTrends(关注) */,
+				14F016261CD70BD000723793 /* Me(我) */,
+				14F0162C1CD70BD000723793 /* New(新帖) */,
+				14F016321CD70BD000723793 /* Other(其它) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14F0161A1CD70BD000723793 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				14F0161B1CD70BD000723793 /* Controller */,
+				14F0161E1CD70BD000723793 /* Model */,
+				14F0161F1CD70BD000723793 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		14F0161B1CD70BD000723793 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14F0161C1CD70BD000723793 /* XLEssenceViewController.h */,
+				14F0161D1CD70BD000723793 /* XLEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14F0161E1CD70BD000723793 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F0161F1CD70BD000723793 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F016201CD70BD000723793 /* FriendTrends(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				14F016211CD70BD000723793 /* Controller */,
+				14F016241CD70BD000723793 /* Model */,
+				14F016251CD70BD000723793 /* View */,
+			);
+			path = "FriendTrends(关注)";
+			sourceTree = "<group>";
+		};
+		14F016211CD70BD000723793 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14F016221CD70BD000723793 /* XLFriendTrendsViewController.h */,
+				14F016231CD70BD000723793 /* XLFriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14F016241CD70BD000723793 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F016251CD70BD000723793 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F016261CD70BD000723793 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				14F016271CD70BD000723793 /* Controller */,
+				14F0162A1CD70BD000723793 /* Model */,
+				14F0162B1CD70BD000723793 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		14F016271CD70BD000723793 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14F016281CD70BD000723793 /* XLMeViewController.h */,
+				14F016291CD70BD000723793 /* XLMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14F0162A1CD70BD000723793 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F0162B1CD70BD000723793 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F0162C1CD70BD000723793 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				14F0162D1CD70BD000723793 /* Controller */,
+				14F016301CD70BD000723793 /* Model */,
+				14F016311CD70BD000723793 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		14F0162D1CD70BD000723793 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14F0162E1CD70BD000723793 /* XLNewViewController.h */,
+				14F0162F1CD70BD000723793 /* XLNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14F016301CD70BD000723793 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F016311CD70BD000723793 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F016321CD70BD000723793 /* Other(其它) */ = {
+			isa = PBXGroup;
+			children = (
+				14F016331CD70BD000723793 /* Category */,
+				14F016381CD70BD000723793 /* Controller */,
+				14F0163B1CD70BD000723793 /* View */,
+				14523C451CD6521C00F44384 /* AppDelegate.h */,
+				14523C461CD6521C00F44384 /* AppDelegate.m */,
+				14523C431CD6521C00F44384 /* main.m */,
+				14523C7C1CD662D600F44384 /* XLPrefixHeader.pch */,
+			);
+			path = "Other(其它)";
+			sourceTree = "<group>";
+		};
+		14F016331CD70BD000723793 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				14F016341CD70BD000723793 /* UIBarButtonItem+XLExtension.h */,
+				14F016351CD70BD000723793 /* UIBarButtonItem+XLExtension.m */,
+				14F016361CD70BD000723793 /* UIView+XLExtension.h */,
+				14F016371CD70BD000723793 /* UIView+XLExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		14F016381CD70BD000723793 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14F016391CD70BD000723793 /* XLTabBarViewController.h */,
+				14F0163A1CD70BD000723793 /* XLTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14F0163B1CD70BD000723793 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14F0163C1CD70BD000723793 /* XLTabBar.h */,
+				14F0163D1CD70BD000723793 /* XLTabBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,15 +410,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F016401CD70BD000723793 /* XLMeViewController.m in Sources */,
+				14F0163F1CD70BD000723793 /* XLFriendTrendsViewController.m in Sources */,
 				14523C471CD6521C00F44384 /* AppDelegate.m in Sources */,
-				14523C751CD656E400F44384 /* XLMeViewController.m in Sources */,
-				14523C6C1CD656A600F44384 /* XLEssenceViewController.m in Sources */,
-				14523C721CD656CE00F44384 /* XLFriendTrendsViewController.m in Sources */,
-				14523C7B1CD6624000F44384 /* UIView+XLExtension.m in Sources */,
-				14523C691CD652EC00F44384 /* XLTabBarViewController.m in Sources */,
-				14523C781CD65C2A00F44384 /* XLTabBar.m in Sources */,
-				14523C6F1CD656BB00F44384 /* XLNewViewController.m in Sources */,
+				14F016411CD70BD000723793 /* XLNewViewController.m in Sources */,
+				14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */,
+				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,
+				14F016451CD70BD000723793 /* XLTabBar.m in Sources */,
+				14F0163E1CD70BD000723793 /* XLEssenceViewController.m in Sources */,
+				14F016421CD70BD000723793 /* UIBarButtonItem+XLExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
