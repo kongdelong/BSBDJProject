@@ -7,7 +7,7 @@
 //
 
 #import "XLFriendTrendsViewController.h"
-
+#import "XLRecommendViewController.h"
 @interface XLFriendTrendsViewController ()
 
 @end
@@ -32,7 +32,8 @@
 
 - (void)friendsClick
 {
-    XLLogFunc;
+    XLRecommendViewController *vc = [[XLRecommendViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
