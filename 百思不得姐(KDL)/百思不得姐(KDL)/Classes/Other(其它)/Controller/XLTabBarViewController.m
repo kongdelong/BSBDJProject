@@ -13,9 +13,39 @@
 #import "XLMeViewController.h"
 #import "XLTabBar.h"
 #import "XLNavigationController.h"
+
 @interface XLTabBarViewController ()
 
 @end
+/**
+ *
+ [UIColor colorWithRed:<#(CGFloat)#> green:<#(CGFloat)#> blue:<#(CGFloat)#> alpha:<#(CGFloat)#>];
+ 颜色:
+ 
+ 24bit颜色: R G B
+ * #ff0000
+ * #ccee00
+ * #000000
+ * #ffffff
+ 
+ 32bit颜色: ARGB
+ * #ff0000ff
+ 
+ 常见颜色:
+ #ff0000 红色
+ #00ff00 绿色
+ #0000ff 蓝色
+ #000000 黑色
+ #ffffff 白色
+ 
+ 灰色的特点:RGB一样
+ 
+ 1024x1024像素的图片  32bit颜色
+ 
+ 1024x1024x32\8 == 1024x1024x4
+ 1024x1024x24\8 == 1024x1024x3
+ */
+
 
 @implementation XLTabBarViewController
 
@@ -61,15 +91,15 @@
 {
 
     // 设置文字和图片
+    vc.navigationItem.title = title;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
-    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0  blue:arc4random_uniform(100)/100.0  alpha:1];
-    //  添加子控制器
-    [self addChildViewController:vc];
+
+  
     // 包装一个导航控制器，添加导航控制器为tabbarcontroller的子控制器
     XLNavigationController *nav = [[XLNavigationController alloc] initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+
     [self addChildViewController:nav];
 }
 

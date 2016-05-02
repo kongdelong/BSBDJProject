@@ -2,7 +2,7 @@
 //  XLEssenceViewController.h
 //  百思不得姐(KDL)
 //
-//  Created by manager on 16/5/1.
+//  Created by manager on 16/5/2.
 //  Copyright © 2016年 kdl. All rights reserved.
 //
 

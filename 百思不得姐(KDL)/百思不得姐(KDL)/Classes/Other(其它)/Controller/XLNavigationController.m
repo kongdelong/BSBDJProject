@@ -20,12 +20,22 @@
     
 }
 /**
+ * 当第一次使用这个类的时候会调用一次
+ */
++ (void)initialize
+{
+    // 当导航栏用在XMGNavigationController中, appearance设置才会生效
+    //    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+}
+
+/**
  * 可以在这个方法中拦截所有push进来的控制器
  */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
    
-    
     if (self.childViewControllers.count > 0) {// 如果push进来的不是第一个控制器
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:@"返回" forState: UIControlStateNormal];
