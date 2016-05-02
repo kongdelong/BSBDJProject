@@ -12,7 +12,7 @@
 #import "XLFriendTrendsViewController.h"
 #import "XLMeViewController.h"
 #import "XLTabBar.h"
-
+#import "XLNavigationController.h"
 @interface XLTabBarViewController ()
 
 @end
@@ -68,7 +68,8 @@
     //  添加子控制器
     [self addChildViewController:vc];
     // 包装一个导航控制器，添加导航控制器为tabbarcontroller的子控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    XLNavigationController *nav = [[XLNavigationController alloc] initWithRootViewController:vc];
+    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
 }
 

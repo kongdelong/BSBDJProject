@@ -28,6 +28,9 @@
                                                 settingItem,
                                                 nightModeItem
                                                 ];
+    // 设置背景色
+    self.view.backgroundColor = XLGlobalBg;
+
     
 }
 

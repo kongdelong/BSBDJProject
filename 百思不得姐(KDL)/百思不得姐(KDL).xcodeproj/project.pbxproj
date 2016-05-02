@@ -19,6 +19,8 @@
 		14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016371CD70BD000723793 /* UIView+XLExtension.m */; };
 		14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0163A1CD70BD000723793 /* XLTabBarViewController.m */; };
 		14F016451CD70BD000723793 /* XLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0163D1CD70BD000723793 /* XLTabBar.m */; };
+		14F0164E1CD70E6C00723793 /* XLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0164D1CD70E6C00723793 /* XLNavigationController.m */; };
+		14F016511CD70FA600723793 /* XLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016501CD70FA600723793 /* XLTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		14F0163A1CD70BD000723793 /* XLTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTabBarViewController.m; sourceTree = "<group>"; };
 		14F0163C1CD70BD000723793 /* XLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTabBar.h; sourceTree = "<group>"; };
 		14F0163D1CD70BD000723793 /* XLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTabBar.m; sourceTree = "<group>"; };
+		14F0164C1CD70E6C00723793 /* XLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavigationController.h; sourceTree = "<group>"; };
+		14F0164D1CD70E6C00723793 /* XLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavigationController.m; sourceTree = "<group>"; };
+		14F0164F1CD70FA600723793 /* XLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTestViewController.h; sourceTree = "<group>"; };
+		14F016501CD70FA600723793 /* XLTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +283,8 @@
 				14523C461CD6521C00F44384 /* AppDelegate.m */,
 				14523C431CD6521C00F44384 /* main.m */,
 				14523C7C1CD662D600F44384 /* XLPrefixHeader.pch */,
+				14F0164F1CD70FA600723793 /* XLTestViewController.h */,
+				14F016501CD70FA600723793 /* XLTestViewController.m */,
 			);
 			path = "Other(其它)";
 			sourceTree = "<group>";
@@ -297,6 +305,8 @@
 			children = (
 				14F016391CD70BD000723793 /* XLTabBarViewController.h */,
 				14F0163A1CD70BD000723793 /* XLTabBarViewController.m */,
+				14F0164C1CD70E6C00723793 /* XLNavigationController.h */,
+				14F0164D1CD70E6C00723793 /* XLNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -418,6 +428,8 @@
 				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,
 				14F016451CD70BD000723793 /* XLTabBar.m in Sources */,
+				14F016511CD70FA600723793 /* XLTestViewController.m in Sources */,
+				14F0164E1CD70E6C00723793 /* XLNavigationController.m in Sources */,
 				14F0163E1CD70BD000723793 /* XLEssenceViewController.m in Sources */,
 				14F016421CD70BD000723793 /* UIBarButtonItem+XLExtension.m in Sources */,
 			);
