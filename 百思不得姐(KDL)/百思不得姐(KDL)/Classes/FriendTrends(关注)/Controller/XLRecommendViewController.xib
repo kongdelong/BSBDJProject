@@ -7,14 +7,48 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XLRecommendViewController">
             <connections>
+                <outlet property="categoryTableView" destination="R2E-w8-up1" id="j27-45-8jJ"/>
+                <outlet property="userTableView" destination="heb-Dc-Xxu" id="gE7-PP-7yx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="374" height="405"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-w8-up1">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="405"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="twH-wj-b2h"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LQu-TY-BbQ"/>
+                        <outlet property="delegate" destination="-1" id="4xm-x9-HYh"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="heb-Dc-Xxu" userLabel="User TableView">
+                    <rect key="frame" x="70" y="0.0" width="304" height="405"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eS2-AL-rG7"/>
+                        <outlet property="delegate" destination="-1" id="gY5-rd-xdZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R2E-w8-up1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5z6-g6-xNV"/>
+                <constraint firstItem="heb-Dc-Xxu" firstAttribute="leading" secondItem="R2E-w8-up1" secondAttribute="trailing" id="C3V-Aa-otu"/>
+                <constraint firstItem="R2E-w8-up1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NRf-kn-fav"/>
+                <constraint firstAttribute="trailing" secondItem="heb-Dc-Xxu" secondAttribute="trailing" id="Qwx-Fh-0oz"/>
+                <constraint firstItem="heb-Dc-Xxu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RNc-5T-q6A"/>
+                <constraint firstAttribute="bottom" secondItem="heb-Dc-Xxu" secondAttribute="bottom" id="k9g-7h-4C7"/>
+                <constraint firstAttribute="bottom" secondItem="R2E-w8-up1" secondAttribute="bottom" id="yT3-k8-gGe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="83" y="408.5"/>
         </view>
     </objects>
 </document>

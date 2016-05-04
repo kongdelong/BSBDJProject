@@ -13,6 +13,7 @@
 #import "UIView+XLExtension.h"
 #import "UIBarButtonItem+XLExtension.h"
 
+
 #ifdef DEBUG
 #define XLLog(...) NSLog(__VA_ARGS__)
 #else
@@ -21,7 +22,9 @@
 
 #define XLLogFunc XLLog(@"%s", __func__)
 
-#define XLRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define XLRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
 #define XLGlobalBg XLRGBColor(223,223,223)
 
 
