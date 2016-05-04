@@ -117,22 +117,30 @@ static  NSString * const XLUserID = @"UserCell";
         }
         else
         {
-            NSMutableDictionary *params = [NSMutableDictionary dictionary];
-            params[@"a"] = @"list";
-            params[@"c"] = @"subscribe";
-            params[@"category_id"] = @(c.id);
-            [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
-            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                //        XLLog(@"%@",responseObject);
-                // 字典数组 －> 模型数组
-                NSArray *users = [XLRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-                // 添加到当前类别对应的用户数组
-                [c.users addObjectsFromArray:users];
-                // 刷新表格
-                [self.userTableView reloadData];
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                XLLog(@"error = %@",error);
-            }];
+            // 赶紧刷新表格 马上显示category的用户数据 不让用户看见上一个category的残留数据
+            [self.userTableView reloadData];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
+                NSMutableDictionary *params = [NSMutableDictionary dictionary];
+                params[@"a"] = @"list";
+                params[@"c"] = @"subscribe";
+                params[@"category_id"] = @(c.id);
+                [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+                } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                    //        XLLog(@"%@",responseObject);
+                    // 字典数组 －> 模型数组
+                    NSArray *users = [XLRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+                    // 添加到当前类别对应的用户数组
+                    [c.users addObjectsFromArray:users];
+                    // 刷新表格
+                    [self.userTableView reloadData];
+                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                    XLLog(@"error = %@",error);
+                }];
+                
+            });
+            
         }
     }
 }
