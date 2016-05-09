@@ -7,7 +7,7 @@
 //
 
 #import "XLEssenceViewController.h"
-
+#import "XLRecommendTagsViewController.h"
 @interface XLEssenceViewController ()
 
 @end
@@ -29,7 +29,9 @@
 
 - (void)tagClick
 {
-    XLLogFunc;
+    XLRecommendTagsViewController *tags = [[XLRecommendTagsViewController alloc] init];
+    [self.navigationController pushViewController:tags
+                                         animated:YES];
 }
 
 

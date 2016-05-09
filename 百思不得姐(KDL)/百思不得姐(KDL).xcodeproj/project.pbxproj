@@ -18,6 +18,11 @@
 		14523C471CD6521C00F44384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C461CD6521C00F44384 /* AppDelegate.m */; };
 		14523C4F1CD6521C00F44384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14523C4E1CD6521C00F44384 /* Assets.xcassets */; };
 		14523C5D1CD6521C00F44384 /* ______KDL_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C5C1CD6521C00F44384 /* ______KDL_UITests.m */; };
+		145440CE1CE0A63B00B56002 /* XLRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145440CC1CE0A63B00B56002 /* XLRecommendTagsViewController.m */; };
+		145440CF1CE0A63B00B56002 /* XLRecommendTagsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145440CD1CE0A63B00B56002 /* XLRecommendTagsViewController.xib */; };
+		145440D31CE0A72B00B56002 /* XLRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145440D11CE0A72B00B56002 /* XLRecommendTagCell.m */; };
+		145440D41CE0A72B00B56002 /* XLRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145440D21CE0A72B00B56002 /* XLRecommendTagCell.xib */; };
+		145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 145440D61CE0AE7900B56002 /* XLRecommentTags.m */; };
 		14F0163F1CD70BD000723793 /* XLFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016231CD70BD000723793 /* XLFriendTrendsViewController.m */; };
 		14F016401CD70BD000723793 /* XLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016291CD70BD000723793 /* XLMeViewController.m */; };
 		14F016411CD70BD000723793 /* XLNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0162F1CD70BD000723793 /* XLNewViewController.m */; };
@@ -66,6 +71,14 @@
 		14523C5C1CD6521C00F44384 /* ______KDL_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______KDL_UITests.m"; sourceTree = "<group>"; };
 		14523C5E1CD6521C00F44384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14523C7C1CD662D600F44384 /* XLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XLPrefixHeader.pch; path = ../../XLPrefixHeader.pch; sourceTree = "<group>"; };
+		145440CB1CE0A63B00B56002 /* XLRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecommendTagsViewController.h; sourceTree = "<group>"; };
+		145440CC1CE0A63B00B56002 /* XLRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommendTagsViewController.m; sourceTree = "<group>"; };
+		145440CD1CE0A63B00B56002 /* XLRecommendTagsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLRecommendTagsViewController.xib; sourceTree = "<group>"; };
+		145440D01CE0A72B00B56002 /* XLRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecommendTagCell.h; sourceTree = "<group>"; };
+		145440D11CE0A72B00B56002 /* XLRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommendTagCell.m; sourceTree = "<group>"; };
+		145440D21CE0A72B00B56002 /* XLRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLRecommendTagCell.xib; sourceTree = "<group>"; };
+		145440D51CE0AE7900B56002 /* XLRecommentTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecommentTags.h; sourceTree = "<group>"; };
+		145440D61CE0AE7900B56002 /* XLRecommentTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommentTags.m; sourceTree = "<group>"; };
 		14F016221CD70BD000723793 /* XLFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFriendTrendsViewController.h; sourceTree = "<group>"; };
 		14F016231CD70BD000723793 /* XLFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFriendTrendsViewController.m; sourceTree = "<group>"; };
 		14F016281CD70BD000723793 /* XLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMeViewController.h; sourceTree = "<group>"; };
@@ -185,6 +198,9 @@
 			children = (
 				14F016551CD717FB00723793 /* XLEssenceViewController.h */,
 				14F016561CD717FB00723793 /* XLEssenceViewController.m */,
+				145440CB1CE0A63B00B56002 /* XLRecommendTagsViewController.h */,
+				145440CC1CE0A63B00B56002 /* XLRecommendTagsViewController.m */,
+				145440CD1CE0A63B00B56002 /* XLRecommendTagsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +208,8 @@
 		14F0161E1CD70BD000723793 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				145440D51CE0AE7900B56002 /* XLRecommentTags.h */,
+				145440D61CE0AE7900B56002 /* XLRecommentTags.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +217,9 @@
 		14F0161F1CD70BD000723793 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				145440D01CE0A72B00B56002 /* XLRecommendTagCell.h */,
+				145440D11CE0A72B00B56002 /* XLRecommendTagCell.m */,
+				145440D21CE0A72B00B56002 /* XLRecommendTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -466,6 +487,8 @@
 			files = (
 				14F0165B1CD719DF00723793 /* XLFriendTrendsViewController.xib in Resources */,
 				14461DD91CDA14EF00305DDD /* XLRecommendUserCell.xib in Resources */,
+				145440CF1CE0A63B00B56002 /* XLRecommendTagsViewController.xib in Resources */,
+				145440D41CE0A72B00B56002 /* XLRecommendTagCell.xib in Resources */,
 				14F016601CD7248900723793 /* XLRecommendViewController.xib in Resources */,
 				140EC83F1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.xib in Resources */,
 				14523C4F1CD6521C00F44384 /* Assets.xcassets in Resources */,
@@ -539,6 +562,7 @@
 				14523C471CD6521C00F44384 /* AppDelegate.m in Sources */,
 				14F016411CD70BD000723793 /* XLNewViewController.m in Sources */,
 				14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */,
+				145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */,
 				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,
 				14F016451CD70BD000723793 /* XLTabBar.m in Sources */,
@@ -548,6 +572,8 @@
 				14F016421CD70BD000723793 /* UIBarButtonItem+XLExtension.m in Sources */,
 				140EC8371CD8BCF3007A6FC1 /* Foundation+Log.m in Sources */,
 				14461DD81CDA14EF00305DDD /* XLRecommendUserCell.m in Sources */,
+				145440D31CE0A72B00B56002 /* XLRecommendTagCell.m in Sources */,
+				145440CE1CE0A63B00B56002 /* XLRecommendTagsViewController.m in Sources */,
 				140EC8421CD8D134007A6FC1 /* XLRecommendCategory.m in Sources */,
 				14F016571CD717FB00723793 /* XLEssenceViewController.m in Sources */,
 				14F0165F1CD7248900723793 /* XLRecommendViewController.m in Sources */,
