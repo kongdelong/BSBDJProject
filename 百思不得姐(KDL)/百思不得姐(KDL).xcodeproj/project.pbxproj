@@ -14,6 +14,9 @@
 		14461DD41CDA113800305DDD /* XLRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14461DD31CDA113800305DDD /* XLRecommendUser.m */; };
 		14461DD81CDA14EF00305DDD /* XLRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14461DD61CDA14EF00305DDD /* XLRecommendUserCell.m */; };
 		14461DD91CDA14EF00305DDD /* XLRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14461DD71CDA14EF00305DDD /* XLRecommendUserCell.xib */; };
+		144684021CE20E0800D37E54 /* XLLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144684001CE20E0800D37E54 /* XLLoginRegisterViewController.m */; };
+		144684031CE20E0800D37E54 /* XLLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144684011CE20E0800D37E54 /* XLLoginRegisterViewController.xib */; };
+		144684061CE2130300D37E54 /* XLVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 144684051CE2130300D37E54 /* XLVerticalButton.m */; };
 		14523C441CD6521C00F44384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C431CD6521C00F44384 /* main.m */; };
 		14523C471CD6521C00F44384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C461CD6521C00F44384 /* AppDelegate.m */; };
 		14523C4F1CD6521C00F44384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14523C4E1CD6521C00F44384 /* Assets.xcassets */; };
@@ -61,6 +64,11 @@
 		14461DD51CDA14EF00305DDD /* XLRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecommendUserCell.h; sourceTree = "<group>"; };
 		14461DD61CDA14EF00305DDD /* XLRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommendUserCell.m; sourceTree = "<group>"; };
 		14461DD71CDA14EF00305DDD /* XLRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLRecommendUserCell.xib; sourceTree = "<group>"; };
+		144683FF1CE20E0800D37E54 /* XLLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLLoginRegisterViewController.h; sourceTree = "<group>"; };
+		144684001CE20E0800D37E54 /* XLLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLLoginRegisterViewController.m; sourceTree = "<group>"; };
+		144684011CE20E0800D37E54 /* XLLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		144684041CE2130300D37E54 /* XLVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVerticalButton.h; sourceTree = "<group>"; };
+		144684051CE2130300D37E54 /* XLVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLVerticalButton.m; sourceTree = "<group>"; };
 		14523C3F1CD6521C00F44384 /* 百思不得姐(KDL).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐(KDL).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14523C431CD6521C00F44384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		14523C451CD6521C00F44384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -243,6 +251,9 @@
 				14F0165C1CD7248900723793 /* XLRecommendViewController.h */,
 				14F0165D1CD7248900723793 /* XLRecommendViewController.m */,
 				14F0165E1CD7248900723793 /* XLRecommendViewController.xib */,
+				144683FF1CE20E0800D37E54 /* XLLoginRegisterViewController.h */,
+				144684001CE20E0800D37E54 /* XLLoginRegisterViewController.m */,
+				144684011CE20E0800D37E54 /* XLLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +278,8 @@
 				14461DD51CDA14EF00305DDD /* XLRecommendUserCell.h */,
 				14461DD61CDA14EF00305DDD /* XLRecommendUserCell.m */,
 				14461DD71CDA14EF00305DDD /* XLRecommendUserCell.xib */,
+				144684041CE2130300D37E54 /* XLVerticalButton.h */,
+				144684051CE2130300D37E54 /* XLVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F0165B1CD719DF00723793 /* XLFriendTrendsViewController.xib in Resources */,
+				144684031CE20E0800D37E54 /* XLLoginRegisterViewController.xib in Resources */,
 				14461DD91CDA14EF00305DDD /* XLRecommendUserCell.xib in Resources */,
 				145440CF1CE0A63B00B56002 /* XLRecommendTagsViewController.xib in Resources */,
 				145440D41CE0A72B00B56002 /* XLRecommendTagCell.xib in Resources */,
@@ -561,6 +575,7 @@
 				14F0163F1CD70BD000723793 /* XLFriendTrendsViewController.m in Sources */,
 				14523C471CD6521C00F44384 /* AppDelegate.m in Sources */,
 				14F016411CD70BD000723793 /* XLNewViewController.m in Sources */,
+				144684021CE20E0800D37E54 /* XLLoginRegisterViewController.m in Sources */,
 				14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */,
 				145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */,
 				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
@@ -577,6 +592,7 @@
 				140EC8421CD8D134007A6FC1 /* XLRecommendCategory.m in Sources */,
 				14F016571CD717FB00723793 /* XLEssenceViewController.m in Sources */,
 				14F0165F1CD7248900723793 /* XLRecommendViewController.m in Sources */,
+				144684061CE2130300D37E54 /* XLVerticalButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

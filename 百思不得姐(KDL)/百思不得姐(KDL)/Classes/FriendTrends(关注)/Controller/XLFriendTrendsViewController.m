@@ -8,6 +8,7 @@
 
 #import "XLFriendTrendsViewController.h"
 #import "XLRecommendViewController.h"
+#import "XLLoginRegisterViewController.h"
 @interface XLFriendTrendsViewController ()
 
 @end
@@ -36,5 +37,11 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)loginRegister
+{
+    XLLoginRegisterViewController *login = [[XLLoginRegisterViewController alloc]init];
+    [self presentViewController:login animated:YES completion:nil];
+    
+}
 
 @end
