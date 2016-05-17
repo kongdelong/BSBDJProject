@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XLTabBarViewController.h"
-
+#import "XLPushGuideView.h"
 @interface AppDelegate ()
 
 @end
@@ -28,6 +28,8 @@
     
     // 显示窗口
     [self.window makeKeyAndVisible];
+    
+    [XLPushGuideView show];
     
     return YES;
 }
