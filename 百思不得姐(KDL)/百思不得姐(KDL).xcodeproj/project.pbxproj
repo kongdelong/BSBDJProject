@@ -19,6 +19,11 @@
 		144684021CE20E0800D37E54 /* XLLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144684001CE20E0800D37E54 /* XLLoginRegisterViewController.m */; };
 		144684031CE20E0800D37E54 /* XLLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144684011CE20E0800D37E54 /* XLLoginRegisterViewController.xib */; };
 		144684061CE2130300D37E54 /* XLVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 144684051CE2130300D37E54 /* XLVerticalButton.m */; };
+		14505C241CF5CEFF00FED3EB /* XLAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14505C231CF5CEFF00FED3EB /* XLAllViewController.m */; };
+		14505C271CF5CF1300FED3EB /* XLVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14505C261CF5CF1300FED3EB /* XLVideoViewController.m */; };
+		14505C2A1CF5CF2200FED3EB /* XLVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14505C291CF5CF2200FED3EB /* XLVoiceViewController.m */; };
+		14505C2D1CF5CF2F00FED3EB /* XLPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14505C2C1CF5CF2F00FED3EB /* XLPictureViewController.m */; };
+		14505C301CF5CF3B00FED3EB /* XLWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14505C2F1CF5CF3B00FED3EB /* XLWordViewController.m */; };
 		14523C441CD6521C00F44384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C431CD6521C00F44384 /* main.m */; };
 		14523C471CD6521C00F44384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523C461CD6521C00F44384 /* AppDelegate.m */; };
 		14523C4F1CD6521C00F44384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14523C4E1CD6521C00F44384 /* Assets.xcassets */; };
@@ -75,6 +80,16 @@
 		144684011CE20E0800D37E54 /* XLLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		144684041CE2130300D37E54 /* XLVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVerticalButton.h; sourceTree = "<group>"; };
 		144684051CE2130300D37E54 /* XLVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLVerticalButton.m; sourceTree = "<group>"; };
+		14505C221CF5CEFF00FED3EB /* XLAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLAllViewController.h; sourceTree = "<group>"; };
+		14505C231CF5CEFF00FED3EB /* XLAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLAllViewController.m; sourceTree = "<group>"; };
+		14505C251CF5CF1300FED3EB /* XLVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVideoViewController.h; sourceTree = "<group>"; };
+		14505C261CF5CF1300FED3EB /* XLVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLVideoViewController.m; sourceTree = "<group>"; };
+		14505C281CF5CF2200FED3EB /* XLVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVoiceViewController.h; sourceTree = "<group>"; };
+		14505C291CF5CF2200FED3EB /* XLVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLVoiceViewController.m; sourceTree = "<group>"; };
+		14505C2B1CF5CF2F00FED3EB /* XLPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPictureViewController.h; sourceTree = "<group>"; };
+		14505C2C1CF5CF2F00FED3EB /* XLPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPictureViewController.m; sourceTree = "<group>"; };
+		14505C2E1CF5CF3B00FED3EB /* XLWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLWordViewController.h; sourceTree = "<group>"; };
+		14505C2F1CF5CF3B00FED3EB /* XLWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLWordViewController.m; sourceTree = "<group>"; };
 		14523C3F1CD6521C00F44384 /* 百思不得姐(KDL).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐(KDL).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14523C431CD6521C00F44384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		14523C451CD6521C00F44384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -217,6 +232,16 @@
 				145440CB1CE0A63B00B56002 /* XLRecommendTagsViewController.h */,
 				145440CC1CE0A63B00B56002 /* XLRecommendTagsViewController.m */,
 				145440CD1CE0A63B00B56002 /* XLRecommendTagsViewController.xib */,
+				14505C221CF5CEFF00FED3EB /* XLAllViewController.h */,
+				14505C231CF5CEFF00FED3EB /* XLAllViewController.m */,
+				14505C251CF5CF1300FED3EB /* XLVideoViewController.h */,
+				14505C261CF5CF1300FED3EB /* XLVideoViewController.m */,
+				14505C281CF5CF2200FED3EB /* XLVoiceViewController.h */,
+				14505C291CF5CF2200FED3EB /* XLVoiceViewController.m */,
+				14505C2B1CF5CF2F00FED3EB /* XLPictureViewController.h */,
+				14505C2C1CF5CF2F00FED3EB /* XLPictureViewController.m */,
+				14505C2E1CF5CF3B00FED3EB /* XLWordViewController.h */,
+				14505C2F1CF5CF3B00FED3EB /* XLWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -593,6 +618,7 @@
 				14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */,
 				145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */,
 				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
+				14505C241CF5CEFF00FED3EB /* XLAllViewController.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,
 				142D2A3A1CEB3C4200F624E7 /* XLPushGuideView.m in Sources */,
 				14F016451CD70BD000723793 /* XLTabBar.m in Sources */,
@@ -600,10 +626,14 @@
 				140EC83E1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m in Sources */,
 				14461DD41CDA113800305DDD /* XLRecommendUser.m in Sources */,
 				14F0164E1CD70E6C00723793 /* XLNavigationController.m in Sources */,
+				14505C301CF5CF3B00FED3EB /* XLWordViewController.m in Sources */,
 				14F016421CD70BD000723793 /* UIBarButtonItem+XLExtension.m in Sources */,
 				140EC8371CD8BCF3007A6FC1 /* Foundation+Log.m in Sources */,
 				14461DD81CDA14EF00305DDD /* XLRecommendUserCell.m in Sources */,
+				14505C2D1CF5CF2F00FED3EB /* XLPictureViewController.m in Sources */,
+				14505C2A1CF5CF2200FED3EB /* XLVoiceViewController.m in Sources */,
 				145440D31CE0A72B00B56002 /* XLRecommendTagCell.m in Sources */,
+				14505C271CF5CF1300FED3EB /* XLVideoViewController.m in Sources */,
 				145440CE1CE0A63B00B56002 /* XLRecommendTagsViewController.m in Sources */,
 				140EC8421CD8D134007A6FC1 /* XLRecommendCategory.m in Sources */,
 				14F016571CD717FB00723793 /* XLEssenceViewController.m in Sources */,
