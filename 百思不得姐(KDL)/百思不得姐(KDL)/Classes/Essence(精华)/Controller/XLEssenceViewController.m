@@ -20,7 +20,7 @@
 /** 当前选中的按钮 */
 @property (nonatomic, weak) UIButton *selectedButton;
 /** 顶部的所有标签 */
-@property (nonatomic, weak) UIView *titlesView;
+@property (nonatomic, weak) UIScrollView *titlesView;
 /** 底部的所有内容 */
 @property (nonatomic, weak) UIScrollView *contentView;
 @end
@@ -62,6 +62,18 @@
     
     XLWordViewController *word = [[XLWordViewController alloc] init];
     [self addChildViewController:word];
+    
+    
+    
+    
+    XLAllViewController *a = [[XLAllViewController alloc] init];
+    [self addChildViewController:a];
+    XLAllViewController *b = [[XLAllViewController alloc] init];
+    [self addChildViewController:b];
+    XLAllViewController *c = [[XLAllViewController alloc] init];
+    [self addChildViewController:c];
+    XLAllViewController *d = [[XLAllViewController alloc] init];
+    [self addChildViewController:d];
 }
 
 /**
@@ -70,7 +82,7 @@
 - (void)setupTitlesView
 {
     // 标签栏整体
-    UIView *titlesView = [[UIView alloc] init];
+    UIScrollView *titlesView = [[UIScrollView alloc] init];
     titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
     titlesView.width = self.view.width;
     titlesView.height = 35;
@@ -86,16 +98,19 @@
     indicatorView.y = titlesView.height - indicatorView.height;
     self.indicatorView = indicatorView;
     
+    
+    // 定义临时变量
+    CGFloat W = 100;
+    CGFloat Y = 0;
+    CGFloat H = self.titlesView.frame.size.height;
     //  内部的子标签
-    NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子"];
-    CGFloat width = titlesView.width / titles.count;
-    CGFloat height = titlesView.height;
-    for (NSInteger i = 0; i<5; i++)
+    NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子",@"网红",@"社会",@"美女",@"游戏"];
+   
+    for (NSInteger i = 0; i<titles.count; i++)
     {
         UIButton *button = [[UIButton alloc] init];
-        button.height = height;
-        button.width = width;
-        button.x = i * width;
+        CGFloat X = i * W;
+        button.frame = CGRectMake(X, Y, W, H);
         button.tag = i;
         [button setTitle:titles[i] forState:UIControlStateNormal];
 //        [button layoutIfNeeded];// 强制布局(强制更新子控件的frame)
@@ -114,6 +129,9 @@
             self.indicatorView.width = button.titleLabel.width;
             self.indicatorView.centerX = button.centerX;
         }
+        // 设置titlesView 的 contentSize
+        self.titlesView.contentSize = CGSizeMake(titles.count * W, 0);
+        
     }
     [titlesView addSubview:indicatorView];
 }
@@ -190,6 +208,23 @@
     // 设置滚动条的内边距
     vc.tableView.scrollIndicatorInsets = vc.tableView.contentInset;
     [scrollView addSubview:vc.view];
+    
+    
+    // 3. 让上边Button在中间
+    CGFloat width = scrollView.frame.size.width;
+    // 让对应的顶部标题居中显示
+    UIButton *label = self.titlesView.subviews[index];
+    CGPoint titleOffset = self.titlesView.contentOffset;
+    titleOffset.x = label.center.x - width * 0.5;
+    // 左边超出处理
+    if (titleOffset.x < 0) titleOffset.x = 0;
+    // 右边超出处理
+    CGFloat maxTitleOffsetX = self.titlesView.contentSize.width - width;
+    if (titleOffset.x > maxTitleOffsetX) titleOffset.x = maxTitleOffsetX;
+    
+    [self.titlesView setContentOffset:titleOffset animated:YES];
+    
+
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
