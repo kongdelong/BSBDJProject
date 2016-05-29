@@ -12,6 +12,8 @@
 
 #import "UIView+XLExtension.h"
 #import "UIBarButtonItem+XLExtension.h"
+#import "XLConst.h"
+#import "NSDate+XLExtension.h"
 
 
 #ifdef DEBUG

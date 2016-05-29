@@ -48,32 +48,43 @@
  */
 - (void)setupChildVces
 {
+    
+    XLWordViewController *word = [[XLWordViewController alloc] init];
+    word.title = @"段子";
+    [self addChildViewController:word];
+    
     XLAllViewController *all = [[XLAllViewController alloc] init];
+    all.title = @"全部";
     [self addChildViewController:all];
     
     XLVideoViewController *video = [[XLVideoViewController alloc] init];
+    video.title = @"视频";
     [self addChildViewController:video];
     
     XLVoiceViewController *voice = [[XLVoiceViewController alloc] init];
+    voice.title = @"声音";
     [self addChildViewController:voice];
-
+    
     XLPictureViewController *picture = [[XLPictureViewController alloc] init];
+    picture.title = @"图片";
     [self addChildViewController:picture];
-    
-    XLWordViewController *word = [[XLWordViewController alloc] init];
-    [self addChildViewController:word];
+ 
     
     
     
     
-    XLAllViewController *a = [[XLAllViewController alloc] init];
-    [self addChildViewController:a];
-    XLAllViewController *b = [[XLAllViewController alloc] init];
-    [self addChildViewController:b];
-    XLAllViewController *c = [[XLAllViewController alloc] init];
-    [self addChildViewController:c];
-    XLAllViewController *d = [[XLAllViewController alloc] init];
-    [self addChildViewController:d];
+//    XLAllViewController *a = [[XLAllViewController alloc] init];
+//    all.title = @"全部2";
+//    [self addChildViewController:a];
+//    XLAllViewController *b = [[XLAllViewController alloc] init];
+//    all.title = @"全部3";
+//    [self addChildViewController:b];
+//    XLAllViewController *c = [[XLAllViewController alloc] init];
+//    all.title = @"全部4";
+//    [self addChildViewController:c];
+//    XLAllViewController *d = [[XLAllViewController alloc] init];
+//    all.title = @"全部5";
+//    [self addChildViewController:d];
 }
 
 /**
@@ -84,9 +95,12 @@
     // 标签栏整体
     UIScrollView *titlesView = [[UIScrollView alloc] init];
     titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
+    titlesView.showsVerticalScrollIndicator = NO;
+    titlesView.showsHorizontalScrollIndicator = NO;
+
     titlesView.width = self.view.width;
-    titlesView.height = 35;
-    titlesView.y = 64;
+    titlesView.height = XLTitilesViewH;
+    titlesView.y = XLTitilesViewY;
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
     
@@ -104,15 +118,16 @@
     CGFloat Y = 0;
     CGFloat H = self.titlesView.frame.size.height;
     //  内部的子标签
-    NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子",@"网红",@"社会",@"美女",@"游戏"];
+//    NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子",@"网红",@"社会",@"美女",@"游戏"];
    
-    for (NSInteger i = 0; i<titles.count; i++)
+    for (NSInteger i = 0; i<self.childViewControllers.count; i++)
     {
         UIButton *button = [[UIButton alloc] init];
         CGFloat X = i * W;
         button.frame = CGRectMake(X, Y, W, H);
         button.tag = i;
-        [button setTitle:titles[i] forState:UIControlStateNormal];
+        UIViewController *vc = self.childViewControllers[i];
+        [button setTitle:vc.title forState:UIControlStateNormal];
 //        [button layoutIfNeeded];// 强制布局(强制更新子控件的frame)
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
@@ -130,7 +145,7 @@
             self.indicatorView.centerX = button.centerX;
         }
         // 设置titlesView 的 contentSize
-        self.titlesView.contentSize = CGSizeMake(titles.count * W, 0);
+        self.titlesView.contentSize = CGSizeMake(self.childViewControllers.count * W, 0);
         
     }
     [titlesView addSubview:indicatorView];
@@ -192,30 +207,27 @@
                                          animated:YES];
 }
 #pragma mark - <UIScrollViewDelegate>
+/**
+ * scrollView结束了滚动动画以后就会调用这个方法（比如- (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated;方法执行的动画完毕后）
+ */
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
      // 当前的索引
     NSInteger index = scrollView.contentOffset.x / scrollView.width;
     // 取出子控制器
-    UITableViewController *vc = self.childViewControllers[index];
+    UIViewController *vc = self.childViewControllers[index];
     vc.view.x = scrollView.contentOffset.x;
     vc.view.y = 0;// 设置控制器view的y值为0(默认是20)
     vc.view.height = scrollView.height; // 设置控制器view的height值为整个屏幕的高度(默认是比屏幕高度少个20)
-    // 设置内边距
-    CGFloat bottom = self.tabBarController.tabBar.height;
-    CGFloat top = CGRectGetMaxY(self.titlesView.frame);
-    vc.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
-    // 设置滚动条的内边距
-    vc.tableView.scrollIndicatorInsets = vc.tableView.contentInset;
     [scrollView addSubview:vc.view];
     
     
     // 3. 让上边Button在中间
     CGFloat width = scrollView.frame.size.width;
     // 让对应的顶部标题居中显示
-    UIButton *label = self.titlesView.subviews[index];
+    UIButton *button = self.titlesView.subviews[index];
     CGPoint titleOffset = self.titlesView.contentOffset;
-    titleOffset.x = label.center.x - width * 0.5;
+    titleOffset.x = button.center.x - width * 0.5;
     // 左边超出处理
     if (titleOffset.x < 0) titleOffset.x = 0;
     // 右边超出处理

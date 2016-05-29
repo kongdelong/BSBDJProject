@@ -17,6 +17,7 @@
 
 @implementation XLRecommendTagCell
 
+
 - (void)setRecommentTag:(XLRecommentTags *)recommentTag
 {
     _recommentTag = recommentTag;
