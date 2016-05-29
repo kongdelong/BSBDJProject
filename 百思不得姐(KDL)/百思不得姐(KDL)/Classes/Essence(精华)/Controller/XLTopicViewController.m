@@ -1,12 +1,12 @@
 //
-//  XLVoiceViewController.m
+//  XLTopicViewController.m
 //  百思不得姐(KDL)
 //
 //  Created by manager on 16/5/25.
 //  Copyright © 2016年 kdl. All rights reserved.
 //
 
-#import "XLVoiceViewController.h"
+#import "XLTopicViewController.h"
 #import <AFNetworking.h>
 #import <UIImageView+WebCache.h>
 #import <MJRefresh.h>
@@ -14,7 +14,7 @@
 #import "XLTopic.h"
 #import "XLTopicCell.h"
 
-@interface XLVoiceViewController ()
+@interface XLTopicViewController ()
 /** 帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
 /** 当前页码 */
@@ -25,7 +25,7 @@
 @property (nonatomic, strong) NSDictionary *params;
 @end
 
-@implementation XLVoiceViewController
+@implementation XLTopicViewController
 
 - (NSMutableArray *)topics
 {
@@ -85,7 +85,7 @@ static NSString * const XMGTopicCellId = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"31";
+    params[@"type"] = @(self.type);
     self.params = params;
     
     // 发送请求
@@ -129,7 +129,7 @@ static NSString * const XMGTopicCellId = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"31";
+    params[@"type"] =  @(self.type);;
     NSInteger page = self.page + 1;
     params[@"page"] = @(page);
     params[@"maxtime"] = self.maxtime;

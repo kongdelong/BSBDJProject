@@ -8,11 +8,7 @@
 
 #import "XLEssenceViewController.h"
 #import "XLRecommendTagsViewController.h"
-#import "XLAllViewController.h"
-#import "XLVideoViewController.h"
-#import "XLVoiceViewController.h"
-#import "XLPictureViewController.h"
-#import "XLWordViewController.h"
+#import "XLTopicViewController.h"
 
 @interface XLEssenceViewController ()<UIScrollViewDelegate>
 /** 标签栏底部的红色指示器 */
@@ -49,24 +45,29 @@
 - (void)setupChildVces
 {
     
-    XLWordViewController *word = [[XLWordViewController alloc] init];
+    XLTopicViewController *word = [[XLTopicViewController alloc] init];
     word.title = @"段子";
+    word.type = XMGTopicTypeWord;
     [self addChildViewController:word];
     
-    XLAllViewController *all = [[XLAllViewController alloc] init];
+    XLTopicViewController *all = [[XLTopicViewController alloc] init];
     all.title = @"全部";
+      all.type = XMGTopicTypeAll;
     [self addChildViewController:all];
     
-    XLVideoViewController *video = [[XLVideoViewController alloc] init];
+    XLTopicViewController *video = [[XLTopicViewController alloc] init];
     video.title = @"视频";
+     video.type = XMGTopicTypeVideo;
     [self addChildViewController:video];
     
-    XLVoiceViewController *voice = [[XLVoiceViewController alloc] init];
+    XLTopicViewController *voice = [[XLTopicViewController alloc] init];
     voice.title = @"声音";
+     voice.type = XMGTopicTypeVoice;
     [self addChildViewController:voice];
     
-    XLPictureViewController *picture = [[XLPictureViewController alloc] init];
+    XLTopicViewController *picture = [[XLTopicViewController alloc] init];
     picture.title = @"图片";
+         picture.type = XMGTopicTypePicture;
     [self addChildViewController:picture];
  
     
