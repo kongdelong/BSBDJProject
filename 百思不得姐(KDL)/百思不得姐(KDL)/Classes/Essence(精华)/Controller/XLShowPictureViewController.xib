@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XLShowPictureViewController">
+            <connections>
+                <outlet property="scrollView" destination="t1o-LP-T5N" id="AdD-XE-Syk"/>
+                <outlet property="view" destination="Vto-fT-6hT" id="Wrc-6a-1rX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Vto-fT-6hT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1o-LP-T5N">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RT-dZ-SRY" userLabel="返回">
+                    <rect key="frame" x="15" y="40" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="kbN-gh-hKk"/>
+                        <constraint firstAttribute="width" constant="35" id="zar-cW-BN7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="show_image_back_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="B9B-A7-W7f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTc-Uo-N9E" userLabel="转发">
+                    <rect key="frame" x="425" y="555" width="70" height="25"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="H1h-hU-8kQ"/>
+                        <constraint firstAttribute="height" constant="25" id="NXg-eb-53M"/>
+                    </constraints>
+                    <state key="normal" title="转发">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k35-um-u6Z">
+                    <rect key="frame" x="510" y="555" width="70" height="25"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="7VG-Ph-x3l"/>
+                        <constraint firstAttribute="height" constant="25" id="8LN-f5-13B"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchUpInside" id="t0U-eb-xgK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4RT-dZ-SRY" firstAttribute="top" secondItem="Vto-fT-6hT" secondAttribute="top" constant="40" id="7TS-04-R89"/>
+                <constraint firstAttribute="trailing" secondItem="k35-um-u6Z" secondAttribute="trailing" constant="20" id="DN8-Sa-aOu"/>
+                <constraint firstAttribute="bottom" secondItem="t1o-LP-T5N" secondAttribute="bottom" id="FQ7-A5-KcA"/>
+                <constraint firstAttribute="bottom" secondItem="yTc-Uo-N9E" secondAttribute="bottom" constant="20" id="W0L-c3-4MA"/>
+                <constraint firstAttribute="bottom" secondItem="k35-um-u6Z" secondAttribute="bottom" constant="20" id="Wwv-yT-iyl"/>
+                <constraint firstItem="t1o-LP-T5N" firstAttribute="top" secondItem="Vto-fT-6hT" secondAttribute="top" id="a4U-iY-Goo"/>
+                <constraint firstItem="k35-um-u6Z" firstAttribute="leading" secondItem="yTc-Uo-N9E" secondAttribute="trailing" constant="15" id="dea-Ci-kWH"/>
+                <constraint firstItem="4RT-dZ-SRY" firstAttribute="leading" secondItem="Vto-fT-6hT" secondAttribute="leading" constant="15" id="fMp-vQ-04w"/>
+                <constraint firstItem="t1o-LP-T5N" firstAttribute="leading" secondItem="Vto-fT-6hT" secondAttribute="leading" id="fg5-O7-vd1"/>
+                <constraint firstAttribute="trailing" secondItem="t1o-LP-T5N" secondAttribute="trailing" id="mkE-gT-vpb"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>

@@ -30,6 +30,14 @@
                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="点击查看全图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKu-oo-Ux7" userLabel="进度条控件" customClass="XLProgressView">
+                    <rect key="frame" x="91" y="78" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="aIG-Cb-Rca"/>
+                        <constraint firstAttribute="width" constant="100" id="lMR-Bj-s9v"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -37,10 +45,12 @@
                 <constraint firstItem="lYE-6r-fAZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dg1-Ij-ym2"/>
                 <constraint firstAttribute="bottom" secondItem="PE6-9z-3ng" secondAttribute="bottom" id="E2o-bK-TyC"/>
                 <constraint firstItem="Eed-WJ-MzQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GB1-tL-bP9"/>
+                <constraint firstItem="jKu-oo-Ux7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GHa-3T-rUd"/>
                 <constraint firstItem="Eed-WJ-MzQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QNr-mv-iyg"/>
                 <constraint firstAttribute="trailing" secondItem="PE6-9z-3ng" secondAttribute="trailing" id="VX3-ox-ZhO"/>
                 <constraint firstItem="PE6-9z-3ng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YTM-qs-GKy"/>
                 <constraint firstItem="PE6-9z-3ng" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iSp-Hy-JD5"/>
+                <constraint firstItem="jKu-oo-Ux7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qaZ-Bi-QId"/>
                 <constraint firstAttribute="trailing" secondItem="lYE-6r-fAZ" secondAttribute="trailing" id="rbp-fs-fHt"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -48,6 +58,7 @@
             <connections>
                 <outlet property="gifView" destination="Eed-WJ-MzQ" id="3xJ-xn-Ot3"/>
                 <outlet property="imageView" destination="PE6-9z-3ng" id="947-bL-1q3"/>
+                <outlet property="progressView" destination="jKu-oo-Ux7" id="okc-B1-VzB"/>
                 <outlet property="seeBigButton" destination="lYE-6r-fAZ" id="c7p-l8-CZq"/>
             </connections>
             <point key="canvasLocation" x="284.5" y="261"/>

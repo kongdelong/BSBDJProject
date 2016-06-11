@@ -30,6 +30,7 @@
 		145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 145440D61CE0AE7900B56002 /* XLRecommentTags.m */; };
 		1466FF461CFAC57000571A87 /* XLTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466FF451CFAC57000571A87 /* XLTopicViewController.m */; };
 		147CD9671CE85AD10047BD8C /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 147CD9661CE85AD10047BD8C /* XLTextField.m */; };
+		14C1AD7C1D0BD65100020125 /* XLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C1AD7B1D0BD65100020125 /* XLProgressView.m */; };
 		14E191F41D0A8C440063DB29 /* XLTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E191F31D0A8C440063DB29 /* XLTopicPictureView.m */; };
 		14E191F61D0A8C520063DB29 /* XLTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E191F51D0A8C520063DB29 /* XLTopicPictureView.xib */; };
 		14EE4AF81CFA8730002A28A9 /* XLTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE4AF71CFA8730002A28A9 /* XLTopic.m */; };
@@ -37,6 +38,8 @@
 		14EE4AFF1CFAA316002A28A9 /* XLTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE4AFD1CFAA316002A28A9 /* XLTopicCell.m */; };
 		14EE4B001CFAA316002A28A9 /* XLTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14EE4AFE1CFAA316002A28A9 /* XLTopicCell.xib */; };
 		14EE4B031CFAB30B002A28A9 /* NSDate+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE4B021CFAB30B002A28A9 /* NSDate+XLExtension.m */; };
+		14EF36BD1D0BD03300917838 /* XLShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EF36BB1D0BD03300917838 /* XLShowPictureViewController.m */; };
+		14EF36BE1D0BD03300917838 /* XLShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14EF36BC1D0BD03300917838 /* XLShowPictureViewController.xib */; };
 		14F0163F1CD70BD000723793 /* XLFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016231CD70BD000723793 /* XLFriendTrendsViewController.m */; };
 		14F016401CD70BD000723793 /* XLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F016291CD70BD000723793 /* XLMeViewController.m */; };
 		14F016411CD70BD000723793 /* XLNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0162F1CD70BD000723793 /* XLNewViewController.m */; };
@@ -105,6 +108,8 @@
 		1466FF451CFAC57000571A87 /* XLTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicViewController.m; sourceTree = "<group>"; };
 		147CD9651CE85AD10047BD8C /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		147CD9661CE85AD10047BD8C /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
+		14C1AD7A1D0BD65100020125 /* XLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLProgressView.h; sourceTree = "<group>"; };
+		14C1AD7B1D0BD65100020125 /* XLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLProgressView.m; sourceTree = "<group>"; };
 		14E191F21D0A8C440063DB29 /* XLTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicPictureView.h; sourceTree = "<group>"; };
 		14E191F31D0A8C440063DB29 /* XLTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicPictureView.m; sourceTree = "<group>"; };
 		14E191F51D0A8C520063DB29 /* XLTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTopicPictureView.xib; sourceTree = "<group>"; };
@@ -117,6 +122,9 @@
 		14EE4AFE1CFAA316002A28A9 /* XLTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTopicCell.xib; sourceTree = "<group>"; };
 		14EE4B011CFAB30B002A28A9 /* NSDate+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XLExtension.h"; sourceTree = "<group>"; };
 		14EE4B021CFAB30B002A28A9 /* NSDate+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XLExtension.m"; sourceTree = "<group>"; };
+		14EF36BA1D0BD03300917838 /* XLShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLShowPictureViewController.h; sourceTree = "<group>"; };
+		14EF36BB1D0BD03300917838 /* XLShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLShowPictureViewController.m; sourceTree = "<group>"; };
+		14EF36BC1D0BD03300917838 /* XLShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLShowPictureViewController.xib; sourceTree = "<group>"; };
 		14F016221CD70BD000723793 /* XLFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFriendTrendsViewController.h; sourceTree = "<group>"; };
 		14F016231CD70BD000723793 /* XLFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFriendTrendsViewController.m; sourceTree = "<group>"; };
 		14F016281CD70BD000723793 /* XLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMeViewController.h; sourceTree = "<group>"; };
@@ -241,6 +249,9 @@
 				145440CD1CE0A63B00B56002 /* XLRecommendTagsViewController.xib */,
 				1466FF441CFAC57000571A87 /* XLTopicViewController.h */,
 				1466FF451CFAC57000571A87 /* XLTopicViewController.m */,
+				14EF36BA1D0BD03300917838 /* XLShowPictureViewController.h */,
+				14EF36BB1D0BD03300917838 /* XLShowPictureViewController.m */,
+				14EF36BC1D0BD03300917838 /* XLShowPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +279,8 @@
 				14E191F21D0A8C440063DB29 /* XLTopicPictureView.h */,
 				14E191F31D0A8C440063DB29 /* XLTopicPictureView.m */,
 				14E191F51D0A8C520063DB29 /* XLTopicPictureView.xib */,
+				14C1AD7A1D0BD65100020125 /* XLProgressView.h */,
+				14C1AD7B1D0BD65100020125 /* XLProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,6 +568,7 @@
 				14E191F61D0A8C520063DB29 /* XLTopicPictureView.xib in Resources */,
 				145440D41CE0A72B00B56002 /* XLRecommendTagCell.xib in Resources */,
 				142D2A3C1CEB3C5300F624E7 /* XLPushGuideView.xib in Resources */,
+				14EF36BE1D0BD03300917838 /* XLShowPictureViewController.xib in Resources */,
 				14F016601CD7248900723793 /* XLRecommendViewController.xib in Resources */,
 				140EC83F1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.xib in Resources */,
 				14523C4F1CD6521C00F44384 /* Assets.xcassets in Resources */,
@@ -623,6 +637,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EF36BD1D0BD03300917838 /* XLShowPictureViewController.m in Sources */,
 				14F016401CD70BD000723793 /* XLMeViewController.m in Sources */,
 				14EE4AF81CFA8730002A28A9 /* XLTopic.m in Sources */,
 				14F0163F1CD70BD000723793 /* XLFriendTrendsViewController.m in Sources */,
@@ -653,6 +668,7 @@
 				14F016571CD717FB00723793 /* XLEssenceViewController.m in Sources */,
 				14F0165F1CD7248900723793 /* XLRecommendViewController.m in Sources */,
 				144684061CE2130300D37E54 /* XLVerticalButton.m in Sources */,
+				14C1AD7C1D0BD65100020125 /* XLProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
