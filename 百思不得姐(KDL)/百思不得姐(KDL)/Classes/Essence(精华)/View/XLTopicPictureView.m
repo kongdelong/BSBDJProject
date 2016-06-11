@@ -46,6 +46,8 @@
 - (void)setTopic:(XLTopic *)topic
 {
     _topic = topic;
+    // 立马显示最新的进度值(防止因为网速慢, 导致显示的是其他图片的下载进度)
+    [self.progressView setProgress:topic.pictureProgress animated:NO];
     /**
      在不知道图片扩展名的情况下, 如何知道图片的真实类型?
      * 取出图片数据的第一个字节, 就可以判断出图片的真实类型
@@ -53,10 +55,27 @@
     // 设置图片
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:topic.large_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
          self.progressView.hidden = NO;
-        CGFloat progress = 1.0 * receivedSize / expectedSize;
-        [self.progressView setProgress:progress animated:NO];
+          // 计算进度值
+      topic.pictureProgress = 1.0 * receivedSize / expectedSize;
+        // 显示进度值
+        [self.progressView setProgress:topic.pictureProgress animated:NO];
+   
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
          self.progressView.hidden = YES;
+        
+        // 如果是大图片， 才需要绘制
+        if (topic.isBigPicture == NO)  return ;
+        
+        // 开启图形上下文
+        UIGraphicsBeginImageContextWithOptions(topic.pictureF.size, YES, 0.0);
+        // 将下载完的 image 对象绘制到图形上下文
+        CGFloat width = topic.pictureF.size.width;
+        CGFloat height = width * image.size.height / image.size.width;
+        [image drawInRect:CGRectMake(0, 0, width, height)];
+        // 获得图片
+        self.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+        // 结束图形上下文
+        UIGraphicsEndImageContext();
     }];
     
     

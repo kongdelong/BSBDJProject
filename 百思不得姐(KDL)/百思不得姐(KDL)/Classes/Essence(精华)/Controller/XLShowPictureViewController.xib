@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XLShowPictureViewController">
             <connections>
+                <outlet property="progressView" destination="Ls6-fa-n08" id="SFA-i8-saX"/>
                 <outlet property="scrollView" destination="t1o-LP-T5N" id="AdD-XE-Syk"/>
                 <outlet property="view" destination="Vto-fT-6hT" id="Wrc-6a-1rX"/>
             </connections>
@@ -57,6 +58,14 @@
                         <action selector="save:" destination="-1" eventType="touchUpInside" id="t0U-eb-xgK"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ls6-fa-n08" userLabel="进度条" customClass="XLProgressView">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="0hO-60-Vyy"/>
+                        <constraint firstAttribute="height" constant="100" id="F0O-UP-oRS"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -69,7 +78,9 @@
                 <constraint firstItem="k35-um-u6Z" firstAttribute="leading" secondItem="yTc-Uo-N9E" secondAttribute="trailing" constant="15" id="dea-Ci-kWH"/>
                 <constraint firstItem="4RT-dZ-SRY" firstAttribute="leading" secondItem="Vto-fT-6hT" secondAttribute="leading" constant="15" id="fMp-vQ-04w"/>
                 <constraint firstItem="t1o-LP-T5N" firstAttribute="leading" secondItem="Vto-fT-6hT" secondAttribute="leading" id="fg5-O7-vd1"/>
+                <constraint firstItem="Ls6-fa-n08" firstAttribute="centerY" secondItem="Vto-fT-6hT" secondAttribute="centerY" id="mSA-nM-uwv"/>
                 <constraint firstAttribute="trailing" secondItem="t1o-LP-T5N" secondAttribute="trailing" id="mkE-gT-vpb"/>
+                <constraint firstItem="Ls6-fa-n08" firstAttribute="centerX" secondItem="Vto-fT-6hT" secondAttribute="centerX" id="wOR-Zd-i6a"/>
             </constraints>
         </view>
     </objects>
