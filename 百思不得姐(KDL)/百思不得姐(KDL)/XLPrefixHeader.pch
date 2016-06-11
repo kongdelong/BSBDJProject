@@ -9,6 +9,13 @@
 #ifndef XLPrefixHeader_pch
 #define XLPrefixHeader_pch
 
+typedef enum {
+    XLTopicTypeAll = 1,
+    XLTopicTypePicture = 10,
+    XLTopicTypeWord = 29,
+    XLTopicTypeVoice = 31,
+    XLTopicTypeVideo = 41
+} XLGTopicType;
 
 #import "UIView+XLExtension.h"
 #import "UIBarButtonItem+XLExtension.h"

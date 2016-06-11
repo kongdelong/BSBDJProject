@@ -152,6 +152,12 @@
                             <constraint firstAttribute="height" constant="14" id="i82-H3-9jl"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ5-D1-T0p" userLabel="TextLabel">
+                        <rect key="frame" x="10" y="55" width="331" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="z65-5h-2n8" firstAttribute="trailing" secondItem="i8q-bY-SiX" secondAttribute="trailing" constant="5" id="161-I3-FFQ"/>
@@ -159,11 +165,14 @@
                     <constraint firstItem="gc1-wX-Xrk" firstAttribute="top" secondItem="i8q-bY-SiX" secondAttribute="top" id="5tt-HW-I4y"/>
                     <constraint firstAttribute="trailing" secondItem="dge-aw-JMz" secondAttribute="trailing" id="A9n-ae-Bbx"/>
                     <constraint firstItem="i8q-bY-SiX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ewn-F3-yyE"/>
+                    <constraint firstItem="XQ5-D1-T0p" firstAttribute="trailing" secondItem="KaB-q8-BTH" secondAttribute="trailing" id="Fdb-9y-Ini"/>
                     <constraint firstItem="dge-aw-JMz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MDM-vY-RtU"/>
                     <constraint firstAttribute="trailing" secondItem="KaB-q8-BTH" secondAttribute="trailing" constant="10" id="ST2-7i-EG5"/>
                     <constraint firstItem="i8q-bY-SiX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VxT-U6-wit"/>
                     <constraint firstItem="z0h-6h-dwY" firstAttribute="leading" secondItem="gc1-wX-Xrk" secondAttribute="leading" id="cG1-Np-vbC"/>
                     <constraint firstItem="gc1-wX-Xrk" firstAttribute="leading" secondItem="i8q-bY-SiX" secondAttribute="trailing" constant="10" id="etx-Ff-19j"/>
+                    <constraint firstItem="XQ5-D1-T0p" firstAttribute="top" secondItem="i8q-bY-SiX" secondAttribute="bottom" constant="10" id="eui-CM-TXC"/>
+                    <constraint firstItem="XQ5-D1-T0p" firstAttribute="leading" secondItem="i8q-bY-SiX" secondAttribute="leading" id="f0D-b7-r36"/>
                     <constraint firstItem="z0h-6h-dwY" firstAttribute="bottom" secondItem="i8q-bY-SiX" secondAttribute="bottom" id="pSD-i8-l0N"/>
                     <constraint firstItem="KaB-q8-BTH" firstAttribute="top" secondItem="gc1-wX-Xrk" secondAttribute="top" id="wIC-bW-1qH"/>
                     <constraint firstAttribute="bottom" secondItem="dge-aw-JMz" secondAttribute="bottom" id="zBh-o6-gSm"/>
@@ -178,6 +187,7 @@
                 <outlet property="profileImageView" destination="i8q-bY-SiX" id="f1S-hg-Po7"/>
                 <outlet property="shareButton" destination="c5W-EO-fJa" id="Wop-rL-wYx"/>
                 <outlet property="sinaVView" destination="z65-5h-2n8" id="0Vt-1t-M9i"/>
+                <outlet property="text_Label" destination="XQ5-D1-T0p" id="ONv-Tv-ewY"/>
             </connections>
             <point key="canvasLocation" x="252.5" y="281"/>
         </tableViewCell>

@@ -21,7 +21,7 @@
                             <constraint firstAttribute="height" constant="50" id="t4P-OT-UMo"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MU4-hD-FBM">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MU4-hD-FBM" userLabel="+ 订阅">
                         <rect key="frame" x="250" y="33" width="50" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Mvu-vM-i7u"/>

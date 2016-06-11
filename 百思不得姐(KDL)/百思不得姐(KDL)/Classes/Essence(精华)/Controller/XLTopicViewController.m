@@ -181,7 +181,12 @@ static NSString * const XMGTopicCellId = @"topic";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200;
+    // 取出帖子模型
+    XLTopic *topic = self.topics[indexPath.row];
+    
+    // 返回这个模型对应的cell高度
+    return topic.cellHeight;
+
 }
 
 @end

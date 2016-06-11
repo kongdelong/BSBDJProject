@@ -45,33 +45,33 @@
 - (void)setupChildVces
 {
     
-    XLTopicViewController *word = [[XLTopicViewController alloc] init];
-    word.title = @"段子";
-    word.type = XMGTopicTypeWord;
-    [self addChildViewController:word];
+  
     
     XLTopicViewController *all = [[XLTopicViewController alloc] init];
     all.title = @"全部";
-      all.type = XMGTopicTypeAll;
+      all.type = XLTopicTypeAll;
     [self addChildViewController:all];
     
     XLTopicViewController *video = [[XLTopicViewController alloc] init];
     video.title = @"视频";
-     video.type = XMGTopicTypeVideo;
+     video.type = XLTopicTypeVideo;
     [self addChildViewController:video];
     
     XLTopicViewController *voice = [[XLTopicViewController alloc] init];
     voice.title = @"声音";
-     voice.type = XMGTopicTypeVoice;
+     voice.type = XLTopicTypeVoice;
     [self addChildViewController:voice];
     
     XLTopicViewController *picture = [[XLTopicViewController alloc] init];
     picture.title = @"图片";
-         picture.type = XMGTopicTypePicture;
+         picture.type = XLTopicTypePicture;
     [self addChildViewController:picture];
- 
     
-    
+    XLTopicViewController *word = [[XLTopicViewController alloc] init];
+    word.title = @"段子";
+    word.type = XLTopicTypeWord;
+    [self addChildViewController:word];
+     
     
     
 //    XLAllViewController *a = [[XLAllViewController alloc] init];
