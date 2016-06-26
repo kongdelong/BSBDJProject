@@ -7,7 +7,7 @@
 //
 
 #import "XLTabBar.h"
-
+#import "XLPublishViewController.h"
 @interface XLTabBar ()
 
 /** 发布按钮 */
@@ -20,13 +20,24 @@
 {
     if (self = [super initWithFrame: frame])
     {
+        // 设置tabbar的背景图片
+        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+        
         UIButton *plusButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [plusButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [plusButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        plusButton.size = plusButton.currentBackgroundImage.size;
+        [plusButton addTarget:self action:@selector(publishClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:plusButton];
         self.plusButton = plusButton;
     }
     return  self;
+}
+
+- (void)publishClick
+{
+    XLPublishViewController *publish = [[XLPublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
 }
 
 - (void)layoutSubviews
