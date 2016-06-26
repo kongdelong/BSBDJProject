@@ -7,7 +7,7 @@
 //
 
 #import "XLTabBar.h"
-#import "XLPublishViewController.h"
+#import "XLPublishView.h"
 @interface XLTabBar ()
 
 /** 发布按钮 */
@@ -36,8 +36,13 @@
 
 - (void)publishClick
 {
-    XLPublishViewController *publish = [[XLPublishViewController alloc] init];
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
+    // 1
+//    XLPublishView *publish = [XLPublishView publishView];
+//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+//    publish.frame = window.frame;
+//    [window addSubview:publish];
+    // 2
+    [XLPublishView show];
 }
 
 - (void)layoutSubviews

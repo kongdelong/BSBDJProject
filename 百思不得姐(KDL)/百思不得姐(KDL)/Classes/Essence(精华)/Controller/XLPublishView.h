@@ -1,5 +1,5 @@
 //
-//  XLPublishViewController.h
+//  XLPublishView.h
 //  百思不得姐(KDL)
 //
 //  Created by manager on 16/6/26.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XLPublishViewController : UIViewController
-
+@interface XLPublishView : UIView
+// 1
+//+ (instancetype)publishView;
+// 2
++ (void)show;
 @end
