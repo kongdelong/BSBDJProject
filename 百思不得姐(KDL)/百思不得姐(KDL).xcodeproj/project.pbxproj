@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1403FFF91D274B730094C579 /* XLTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FFF81D274B730094C579 /* XLTopicVoiceView.m */; };
+		1403FFFB1D274B820094C579 /* XLTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */; };
 		140EC8371CD8BCF3007A6FC1 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EC8361CD8BCF3007A6FC1 /* Foundation+Log.m */; };
 		140EC83E1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EC83C1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m */; };
 		140EC83F1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140EC83D1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.xib */; };
@@ -69,6 +71,9 @@
 
 /* Begin PBXFileReference section */
 		0E30F367BB59E04CAC0D2C7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1403FFF71D274B730094C579 /* XLTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicVoiceView.h; sourceTree = "<group>"; };
+		1403FFF81D274B730094C579 /* XLTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicVoiceView.m; sourceTree = "<group>"; };
+		1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTopicVoiceView.xib; sourceTree = "<group>"; };
 		140EC8361CD8BCF3007A6FC1 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		140EC83B1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecommendCatogoryCell.h; sourceTree = "<group>"; };
 		140EC83C1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommendCatogoryCell.m; sourceTree = "<group>"; };
@@ -275,6 +280,8 @@
 		14F0161F1CD70BD000723793 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				14C1AD7A1D0BD65100020125 /* XLProgressView.h */,
+				14C1AD7B1D0BD65100020125 /* XLProgressView.m */,
 				145440D01CE0A72B00B56002 /* XLRecommendTagCell.h */,
 				145440D11CE0A72B00B56002 /* XLRecommendTagCell.m */,
 				145440D21CE0A72B00B56002 /* XLRecommendTagCell.xib */,
@@ -284,8 +291,9 @@
 				14E191F21D0A8C440063DB29 /* XLTopicPictureView.h */,
 				14E191F31D0A8C440063DB29 /* XLTopicPictureView.m */,
 				14E191F51D0A8C520063DB29 /* XLTopicPictureView.xib */,
-				14C1AD7A1D0BD65100020125 /* XLProgressView.h */,
-				14C1AD7B1D0BD65100020125 /* XLProgressView.m */,
+				1403FFF71D274B730094C579 /* XLTopicVoiceView.h */,
+				1403FFF81D274B730094C579 /* XLTopicVoiceView.m */,
+				1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -577,6 +585,7 @@
 				14E191F61D0A8C520063DB29 /* XLTopicPictureView.xib in Resources */,
 				145440D41CE0A72B00B56002 /* XLRecommendTagCell.xib in Resources */,
 				142D2A3C1CEB3C5300F624E7 /* XLPushGuideView.xib in Resources */,
+				1403FFFB1D274B820094C579 /* XLTopicVoiceView.xib in Resources */,
 				14EF36BE1D0BD03300917838 /* XLShowPictureViewController.xib in Resources */,
 				14F016601CD7248900723793 /* XLRecommendViewController.xib in Resources */,
 				140EC83F1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.xib in Resources */,
@@ -657,6 +666,7 @@
 				14E191F41D0A8C440063DB29 /* XLTopicPictureView.m in Sources */,
 				14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */,
 				145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */,
+				1403FFF91D274B730094C579 /* XLTopicVoiceView.m in Sources */,
 				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,
 				14EE4AFF1CFAA316002A28A9 /* XLTopicCell.m in Sources */,

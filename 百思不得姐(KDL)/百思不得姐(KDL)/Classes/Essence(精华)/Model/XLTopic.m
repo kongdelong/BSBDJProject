@@ -89,6 +89,15 @@
             
             _cellHeight += pictureH + XLTopicCellMargin;
         }
+        else if (self.type == XLTopicTypeVoice){ // 声音帖子
+            CGFloat voiceX = XLTopicCellMargin;
+            CGFloat voiceY = XLTopicCellTextY + textH + XLTopicCellMargin;
+            CGFloat voiceW = maxSize.width;
+            CGFloat voiceH = voiceW * self.height / self.width;
+            _voiceF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
+            
+            _cellHeight += voiceH + XLTopicCellMargin;
+        }
         // 底部工具条的高度
         _cellHeight += XLTopicCellBottomBarH + XLTopicCellMargin;
         

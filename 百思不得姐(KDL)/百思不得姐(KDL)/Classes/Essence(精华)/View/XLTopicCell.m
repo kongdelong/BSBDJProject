@@ -10,6 +10,7 @@
 #import "XLTopic.h"
 #import <UIImageView+WebCache.h>
 #import "XLTopicPictureView.h"
+#import "XLTopicVoiceView.h"
 @interface XLTopicCell ()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -31,6 +32,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *text_Label;
 /** 图片帖子中间的内容 */
 @property (nonatomic, weak) XLTopicPictureView *pictureView;
+/** 声音帖子中间的内容 */
+@property (nonatomic, weak) XLTopicVoiceView *voiceView;
 @end
 
 @implementation XLTopicCell
@@ -43,6 +46,16 @@
         _pictureView = pictureView;
     }
     return _pictureView;
+}
+
+- (XLTopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        XLTopicVoiceView *voiceView = [XLTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
 }
 
 - (void)awakeFromNib {
@@ -94,6 +107,11 @@
     if (topic.type == XLTopicTypePicture) { // 图片帖子
         self.pictureView.topic = topic;
         self.pictureView.frame = topic.pictureF;
+    }else if (topic.type == XLTopicTypeVoice){ // 声音帖子
+        self.voiceView.topic = topic;
+        self.voiceView.frame = topic.voiceF;
+    }else if (topic.type == XLTopicTypeVideo){ // 视频帖子
+    
     }
 }
 
