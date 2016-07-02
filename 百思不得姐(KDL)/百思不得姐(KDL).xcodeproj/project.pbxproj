@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140300001D2757640094C579 /* XLTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1403FFFF1D2757640094C579 /* XLTopicVideoView.xib */; };
 		1403FFF91D274B730094C579 /* XLTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FFF81D274B730094C579 /* XLTopicVoiceView.m */; };
 		1403FFFB1D274B820094C579 /* XLTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */; };
+		1403FFFE1D2757550094C579 /* XLTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FFFD1D2757550094C579 /* XLTopicVideoView.m */; };
 		140EC8371CD8BCF3007A6FC1 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EC8361CD8BCF3007A6FC1 /* Foundation+Log.m */; };
 		140EC83E1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EC83C1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m */; };
 		140EC83F1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140EC83D1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.xib */; };
@@ -74,6 +76,9 @@
 		1403FFF71D274B730094C579 /* XLTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicVoiceView.h; sourceTree = "<group>"; };
 		1403FFF81D274B730094C579 /* XLTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicVoiceView.m; sourceTree = "<group>"; };
 		1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTopicVoiceView.xib; sourceTree = "<group>"; };
+		1403FFFC1D2757550094C579 /* XLTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicVideoView.h; sourceTree = "<group>"; };
+		1403FFFD1D2757550094C579 /* XLTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicVideoView.m; sourceTree = "<group>"; };
+		1403FFFF1D2757640094C579 /* XLTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTopicVideoView.xib; sourceTree = "<group>"; };
 		140EC8361CD8BCF3007A6FC1 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		140EC83B1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecommendCatogoryCell.h; sourceTree = "<group>"; };
 		140EC83C1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommendCatogoryCell.m; sourceTree = "<group>"; };
@@ -294,6 +299,9 @@
 				1403FFF71D274B730094C579 /* XLTopicVoiceView.h */,
 				1403FFF81D274B730094C579 /* XLTopicVoiceView.m */,
 				1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */,
+				1403FFFC1D2757550094C579 /* XLTopicVideoView.h */,
+				1403FFFD1D2757550094C579 /* XLTopicVideoView.m */,
+				1403FFFF1D2757640094C579 /* XLTopicVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -578,6 +586,7 @@
 			files = (
 				14F0165B1CD719DF00723793 /* XLFriendTrendsViewController.xib in Resources */,
 				144684031CE20E0800D37E54 /* XLLoginRegisterViewController.xib in Resources */,
+				140300001D2757640094C579 /* XLTopicVideoView.xib in Resources */,
 				147282F91D1F98050058B286 /* XLPublishView.xib in Resources */,
 				14461DD91CDA14EF00305DDD /* XLRecommendUserCell.xib in Resources */,
 				14EE4B001CFAA316002A28A9 /* XLTopicCell.xib in Resources */,
@@ -666,6 +675,7 @@
 				14E191F41D0A8C440063DB29 /* XLTopicPictureView.m in Sources */,
 				14F016441CD70BD000723793 /* XLTabBarViewController.m in Sources */,
 				145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */,
+				1403FFFE1D2757550094C579 /* XLTopicVideoView.m in Sources */,
 				1403FFF91D274B730094C579 /* XLTopicVoiceView.m in Sources */,
 				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,

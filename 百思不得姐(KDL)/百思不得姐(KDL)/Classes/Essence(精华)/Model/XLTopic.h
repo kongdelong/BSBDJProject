@@ -43,7 +43,8 @@
 @property (nonatomic, assign) NSInteger voicetime;
 /** 播放次数 */
 @property (nonatomic, assign) NSInteger playcount;
-
+/** 视频时长 */
+@property (nonatomic, assign) NSInteger videotime;
 /****** 额外的辅助属性 ******/
 
 /** cell的高度 */
@@ -56,4 +57,6 @@
 @property (nonatomic, assign) CGFloat pictureProgress;
 /** 声音控件的frame */
 @property (nonatomic, assign, readonly) CGRect voiceF;
+/** 视频控件的frame */
+@property (nonatomic, assign, readonly) CGRect videoF;
 @end

@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import "XLTopicPictureView.h"
 #import "XLTopicVoiceView.h"
+#import "XLTopicVideoView.h"
 @interface XLTopicCell ()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -34,6 +35,8 @@
 @property (nonatomic, weak) XLTopicPictureView *pictureView;
 /** 声音帖子中间的内容 */
 @property (nonatomic, weak) XLTopicVoiceView *voiceView;
+/** 视频帖子中间的内容 */
+@property (nonatomic, weak) XLTopicVideoView *videoView;
 @end
 
 @implementation XLTopicCell
@@ -56,6 +59,16 @@
         _voiceView = voiceView;
     }
     return _voiceView;
+}
+
+- (XLTopicVideoView *)videoView
+{
+    if (!_videoView) {
+        XLTopicVideoView *videoView = [XLTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
 }
 
 - (void)awakeFromNib {
@@ -105,13 +118,32 @@
     
     // 根据模型类型(帖子类型)添加对应的内容到cell的中间
     if (topic.type == XLTopicTypePicture) { // 图片帖子
+           self.pictureView.hidden = NO;
         self.pictureView.topic = topic;
         self.pictureView.frame = topic.pictureF;
+        
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
     }else if (topic.type == XLTopicTypeVoice){ // 声音帖子
+        self.voiceView.hidden = NO;
+
         self.voiceView.topic = topic;
         self.voiceView.frame = topic.voiceF;
+        
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
     }else if (topic.type == XLTopicTypeVideo){ // 视频帖子
-    
+        self.videoView.hidden = NO;
+
+        self.videoView.topic = topic;
+        self.videoView.frame = topic.videoF;
+        
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
+    }else{ // 段子
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
     }
 }
 

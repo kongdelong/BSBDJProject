@@ -98,6 +98,16 @@
             
             _cellHeight += voiceH + XLTopicCellMargin;
         }
+        else if (self.type == XLTopicTypeVideo){ // 视频帖子
+            
+            CGFloat videoX = XLTopicCellMargin;
+            CGFloat videoY = XLTopicCellTextY + textH + XLTopicCellMargin;
+            CGFloat videoW = maxSize.width;
+            CGFloat videoH = videoW * self.height / self.width;
+            _videoF = CGRectMake(videoX, videoY, videoW, videoH);
+            
+            _cellHeight += videoH + XLTopicCellMargin;
+        }
         // 底部工具条的高度
         _cellHeight += XLTopicCellBottomBarH + XLTopicCellMargin;
         
