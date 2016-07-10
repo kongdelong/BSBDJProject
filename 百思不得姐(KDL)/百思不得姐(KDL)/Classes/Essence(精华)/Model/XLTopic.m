@@ -8,10 +8,11 @@
 
 #import "XLTopic.h"
 #import <MJExtension.h>
+#import "XLComment.h"
+#import "XLUser.h"
 @implementation XLTopic
 {
     CGFloat _cellHeight;
-    CGRect _pictureF;
 }
 
 + (NSDictionary *)mj_replacedKeyFromPropertyName
@@ -21,6 +22,12 @@
              @"large_image" : @"image1",
              @"middle_image" : @"image2"
              };
+}
+
++ (NSDictionary *)objectClassInArray
+{
+    //    return @{@"top_cmt" : [XLComment class]};
+    return @{@"top_cmt" : @"XLComment"};
 }
 
 - (NSString *)create_time
@@ -108,6 +115,18 @@
             
             _cellHeight += videoH + XLTopicCellMargin;
         }
+        
+        // 如果有最热评论
+        XLComment *cmt = [self.top_cmt firstObject];
+        if (cmt) {
+           
+            NSString *content = [NSString stringWithFormat:@"%@ : %@", cmt.user.username, cmt.content];
+            CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+            
+            _cellHeight += XLTopicCellTopCmtTitleH + contentH + XLTopicCellMargin;
+        }
+        
+        
         // 底部工具条的高度
         _cellHeight += XLTopicCellBottomBarH + XLTopicCellMargin;
         

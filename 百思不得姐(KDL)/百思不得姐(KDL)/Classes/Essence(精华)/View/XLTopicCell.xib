@@ -7,11 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="topic" rowHeight="268" id="KGk-i7-Jjw" customClass="XLTopicCell">
-            <rect key="frame" x="0.0" y="0.0" width="351" height="268"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="topic" rowHeight="352" id="KGk-i7-Jjw" customClass="XLTopicCell">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="352"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="351" height="267.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="356" height="351.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i8q-bY-SiX" userLabel="头像">
@@ -34,7 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaB-q8-BTH" userLabel="关注按钮">
-                        <rect key="frame" x="322" y="10" width="19" height="20"/>
+                        <rect key="frame" x="327" y="10" width="19" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="19" id="593-8T-b7a"/>
                             <constraint firstAttribute="height" constant="20" id="Pbl-UA-trT"/>
@@ -43,16 +43,16 @@
                         <state key="highlighted" backgroundImage="cellFollowClickIcon"/>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dge-aw-JMz" userLabel="底部工具条">
-                        <rect key="frame" x="0.0" y="223" width="351" height="44"/>
+                        <rect key="frame" x="0.0" y="316" width="356" height="35"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="WVd-qF-hGV" userLabel="顶部分割线">
-                                <rect key="frame" x="0.0" y="0.0" width="351" height="1"/>
+                                <rect key="frame" x="0.0" y="0.0" width="356" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="V2i-Ad-zBz"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cd-y8-nCJ" userLabel="顶">
-                                <rect key="frame" x="0.0" y="1" width="88" height="43"/>
+                                <rect key="frame" x="0.0" y="1" width="89" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="545" image="mainCellDing">
@@ -61,7 +61,7 @@
                                 <state key="highlighted" image="mainCellDingClick"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4U-jt-wkE" userLabel="踩">
-                                <rect key="frame" x="88" y="1" width="87.5" height="43"/>
+                                <rect key="frame" x="89" y="1" width="89" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="545" image="mainCellCai">
@@ -70,7 +70,7 @@
                                 <state key="highlighted" image="mainCellCaiClick"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REF-jE-ibN" userLabel="评论">
-                                <rect key="frame" x="263" y="1" width="87.5" height="43"/>
+                                <rect key="frame" x="267" y="1" width="89" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="545" image="mainCellComment">
@@ -79,7 +79,7 @@
                                 <state key="highlighted" image="mainCellCommentClick"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5W-EO-fJa" userLabel="分享">
-                                <rect key="frame" x="175" y="1" width="88" height="43"/>
+                                <rect key="frame" x="178" y="1" width="89" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="545" image="mainCellShare">
@@ -88,19 +88,19 @@
                                 <state key="highlighted" image="mainCellShareClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="Hd7-Ex-G8J" userLabel="分割线">
-                                <rect key="frame" x="88" y="0.0" width="1" height="44"/>
+                                <rect key="frame" x="89" y="0.0" width="1" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="BYy-Yp-ahl"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="rLw-Vm-Nkz" userLabel="分割线">
-                                <rect key="frame" x="175" y="0.0" width="1" height="44"/>
+                                <rect key="frame" x="178" y="0.0" width="1" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="4Cr-gz-pB7"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="Bxk-0x-7qt" userLabel="分割线">
-                                <rect key="frame" x="263" y="0.0" width="1" height="44"/>
+                                <rect key="frame" x="267" y="0.0" width="1" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="FVd-4R-Nn8"/>
                                 </constraints>
@@ -116,7 +116,7 @@
                             <constraint firstItem="P4U-jt-wkE" firstAttribute="width" secondItem="7Cd-y8-nCJ" secondAttribute="width" id="Hdt-bs-ciI"/>
                             <constraint firstItem="Bxk-0x-7qt" firstAttribute="leading" secondItem="c5W-EO-fJa" secondAttribute="trailing" id="JFd-ne-ssn"/>
                             <constraint firstAttribute="bottom" secondItem="Bxk-0x-7qt" secondAttribute="bottom" id="JrT-4G-e62"/>
-                            <constraint firstAttribute="height" constant="44" id="Lpj-dt-xB7"/>
+                            <constraint firstAttribute="height" constant="35" id="Lpj-dt-xB7"/>
                             <constraint firstItem="c5W-EO-fJa" firstAttribute="width" secondItem="7Cd-y8-nCJ" secondAttribute="width" id="PU6-ge-p8d"/>
                             <constraint firstItem="c5W-EO-fJa" firstAttribute="bottom" secondItem="7Cd-y8-nCJ" secondAttribute="bottom" id="R0O-0f-elH"/>
                             <constraint firstItem="REF-jE-ibN" firstAttribute="leading" secondItem="c5W-EO-fJa" secondAttribute="trailing" id="RuA-fX-Kpo"/>
@@ -152,17 +152,58 @@
                             <constraint firstAttribute="height" constant="14" id="i82-H3-9jl"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ5-D1-T0p" userLabel="TextLabel">
-                        <rect key="frame" x="10" y="55" width="331" height="17"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-ui-jb8" userLabel="最热评论－父控件">
+                        <rect key="frame" x="10" y="255" width="336" height="51.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最热评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaI-kh-aIt">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Er9-B4-zvx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="木大工工工大木；量；slagqqwr 革dfdsafsadfdsafdsafdsafdsafdsafdsafdsafads" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-uD-Cr9" userLabel="评论内容">
+                                <rect key="frame" x="0.0" y="20" width="336" height="31.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NaI-kh-aIt" firstAttribute="leading" secondItem="HZS-ui-jb8" secondAttribute="leading" id="2pd-wM-BTW"/>
+                            <constraint firstItem="Bpz-uD-Cr9" firstAttribute="leading" secondItem="HZS-ui-jb8" secondAttribute="leading" id="Nba-LD-ouY"/>
+                            <constraint firstAttribute="bottom" secondItem="Bpz-uD-Cr9" secondAttribute="bottom" id="cnA-cb-HGQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Bpz-uD-Cr9" secondAttribute="trailing" id="fIR-25-QIk"/>
+                            <constraint firstItem="Bpz-uD-Cr9" firstAttribute="top" secondItem="NaI-kh-aIt" secondAttribute="bottom" id="gdz-PV-43k"/>
+                            <constraint firstItem="NaI-kh-aIt" firstAttribute="top" secondItem="HZS-ui-jb8" secondAttribute="top" id="p2q-nt-aXi"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ5-D1-T0p" userLabel="TextLabel">
+                        <rect key="frame" x="10" y="55" width="336" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="WQF-b2-9Eg"/>
+                        </constraints>
+                        <string key="text">fsgfdsgdsfgdsfgsfdgsdffgfdsgsdfgfdsgfdsgdfgsdfgfdsgsdfgsdfgdfsgdfsgfdsgdfsgdfsgdfsgfdsgfdsgdfsgfdsgfdsgfdsgdfsgfddsaf;dslafjds;alfkdsaf</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WQF-b2-9Eg"/>
+                            </mask>
+                        </variation>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="z65-5h-2n8" firstAttribute="trailing" secondItem="i8q-bY-SiX" secondAttribute="trailing" constant="5" id="161-I3-FFQ"/>
                     <constraint firstItem="z65-5h-2n8" firstAttribute="bottom" secondItem="i8q-bY-SiX" secondAttribute="bottom" constant="5" id="2u7-qw-IFA"/>
                     <constraint firstItem="gc1-wX-Xrk" firstAttribute="top" secondItem="i8q-bY-SiX" secondAttribute="top" id="5tt-HW-I4y"/>
+                    <constraint firstItem="dge-aw-JMz" firstAttribute="top" secondItem="HZS-ui-jb8" secondAttribute="bottom" constant="10" id="5zv-D9-rix"/>
                     <constraint firstAttribute="trailing" secondItem="dge-aw-JMz" secondAttribute="trailing" id="A9n-ae-Bbx"/>
                     <constraint firstItem="i8q-bY-SiX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ewn-F3-yyE"/>
                     <constraint firstItem="XQ5-D1-T0p" firstAttribute="trailing" secondItem="KaB-q8-BTH" secondAttribute="trailing" id="Fdb-9y-Ini"/>
@@ -170,9 +211,11 @@
                     <constraint firstAttribute="trailing" secondItem="KaB-q8-BTH" secondAttribute="trailing" constant="10" id="ST2-7i-EG5"/>
                     <constraint firstItem="i8q-bY-SiX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VxT-U6-wit"/>
                     <constraint firstItem="z0h-6h-dwY" firstAttribute="leading" secondItem="gc1-wX-Xrk" secondAttribute="leading" id="cG1-Np-vbC"/>
+                    <constraint firstItem="HZS-ui-jb8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eKe-bA-J9u"/>
                     <constraint firstItem="gc1-wX-Xrk" firstAttribute="leading" secondItem="i8q-bY-SiX" secondAttribute="trailing" constant="10" id="etx-Ff-19j"/>
                     <constraint firstItem="XQ5-D1-T0p" firstAttribute="top" secondItem="i8q-bY-SiX" secondAttribute="bottom" constant="10" id="eui-CM-TXC"/>
                     <constraint firstItem="XQ5-D1-T0p" firstAttribute="leading" secondItem="i8q-bY-SiX" secondAttribute="leading" id="f0D-b7-r36"/>
+                    <constraint firstAttribute="trailing" secondItem="HZS-ui-jb8" secondAttribute="trailing" constant="10" id="nUo-c1-h6G"/>
                     <constraint firstItem="z0h-6h-dwY" firstAttribute="bottom" secondItem="i8q-bY-SiX" secondAttribute="bottom" id="pSD-i8-l0N"/>
                     <constraint firstItem="KaB-q8-BTH" firstAttribute="top" secondItem="gc1-wX-Xrk" secondAttribute="top" id="wIC-bW-1qH"/>
                     <constraint firstAttribute="bottom" secondItem="dge-aw-JMz" secondAttribute="bottom" id="zBh-o6-gSm"/>
@@ -188,8 +231,10 @@
                 <outlet property="shareButton" destination="c5W-EO-fJa" id="Wop-rL-wYx"/>
                 <outlet property="sinaVView" destination="z65-5h-2n8" id="0Vt-1t-M9i"/>
                 <outlet property="text_Label" destination="XQ5-D1-T0p" id="ONv-Tv-ewY"/>
+                <outlet property="topCmtContentLabel" destination="Bpz-uD-Cr9" id="x6y-bb-2T0"/>
+                <outlet property="topCmtView" destination="HZS-ui-jb8" id="zMi-Ea-90y"/>
             </connections>
-            <point key="canvasLocation" x="252.5" y="281"/>
+            <point key="canvasLocation" x="147" y="322"/>
         </tableViewCell>
     </objects>
     <resources>

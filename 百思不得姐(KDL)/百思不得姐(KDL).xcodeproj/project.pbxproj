@@ -36,6 +36,8 @@
 		147282F81D1F98050058B286 /* XLPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147282F61D1F98050058B286 /* XLPublishView.m */; };
 		147282F91D1F98050058B286 /* XLPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147282F71D1F98050058B286 /* XLPublishView.xib */; };
 		147CD9671CE85AD10047BD8C /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 147CD9661CE85AD10047BD8C /* XLTextField.m */; };
+		14AD26B61D3228B2008864B4 /* XLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AD26B51D3228B2008864B4 /* XLUser.m */; };
+		14AD26B91D3228D6008864B4 /* XLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AD26B81D3228D6008864B4 /* XLComment.m */; };
 		14C1AD7C1D0BD65100020125 /* XLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C1AD7B1D0BD65100020125 /* XLProgressView.m */; };
 		14E191F41D0A8C440063DB29 /* XLTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E191F31D0A8C440063DB29 /* XLTopicPictureView.m */; };
 		14E191F61D0A8C520063DB29 /* XLTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E191F51D0A8C520063DB29 /* XLTopicPictureView.xib */; };
@@ -123,6 +125,10 @@
 		147282F71D1F98050058B286 /* XLPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XLPublishView.xib; path = "../../Essence(精华)/Controller/XLPublishView.xib"; sourceTree = "<group>"; };
 		147CD9651CE85AD10047BD8C /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		147CD9661CE85AD10047BD8C /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
+		14AD26B41D3228B2008864B4 /* XLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLUser.h; sourceTree = "<group>"; };
+		14AD26B51D3228B2008864B4 /* XLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLUser.m; sourceTree = "<group>"; };
+		14AD26B71D3228D6008864B4 /* XLComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLComment.h; sourceTree = "<group>"; };
+		14AD26B81D3228D6008864B4 /* XLComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLComment.m; sourceTree = "<group>"; };
 		14C1AD7A1D0BD65100020125 /* XLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLProgressView.h; sourceTree = "<group>"; };
 		14C1AD7B1D0BD65100020125 /* XLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLProgressView.m; sourceTree = "<group>"; };
 		14E191F21D0A8C440063DB29 /* XLTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicPictureView.h; sourceTree = "<group>"; };
@@ -278,6 +284,10 @@
 				145440D61CE0AE7900B56002 /* XLRecommentTags.m */,
 				14EE4AF61CFA8730002A28A9 /* XLTopic.h */,
 				14EE4AF71CFA8730002A28A9 /* XLTopic.m */,
+				14AD26B41D3228B2008864B4 /* XLUser.h */,
+				14AD26B51D3228B2008864B4 /* XLUser.m */,
+				14AD26B71D3228D6008864B4 /* XLComment.h */,
+				14AD26B81D3228D6008864B4 /* XLComment.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -678,6 +688,7 @@
 				1403FFFE1D2757550094C579 /* XLTopicVideoView.m in Sources */,
 				1403FFF91D274B730094C579 /* XLTopicVoiceView.m in Sources */,
 				14F016431CD70BD000723793 /* UIView+XLExtension.m in Sources */,
+				14AD26B91D3228D6008864B4 /* XLComment.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,
 				14EE4AFF1CFAA316002A28A9 /* XLTopicCell.m in Sources */,
 				142D2A3A1CEB3C4200F624E7 /* XLPushGuideView.m in Sources */,
@@ -698,6 +709,7 @@
 				14F016571CD717FB00723793 /* XLEssenceViewController.m in Sources */,
 				14F0165F1CD7248900723793 /* XLRecommendViewController.m in Sources */,
 				144684061CE2130300D37E54 /* XLVerticalButton.m in Sources */,
+				14AD26B61D3228B2008864B4 /* XLUser.m in Sources */,
 				14C1AD7C1D0BD65100020125 /* XLProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

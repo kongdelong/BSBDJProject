@@ -12,6 +12,8 @@
 #import "XLTopicPictureView.h"
 #import "XLTopicVoiceView.h"
 #import "XLTopicVideoView.h"
+#import "XLComment.h"
+#import "XLUser.h"
 @interface XLTopicCell ()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -37,6 +39,10 @@
 @property (nonatomic, weak) XLTopicVoiceView *voiceView;
 /** 视频帖子中间的内容 */
 @property (nonatomic, weak) XLTopicVideoView *videoView;
+/** 最热评论的内容 */
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
+/** 最热评论的整体 */
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
 @end
 
 @implementation XLTopicCell
@@ -77,6 +83,7 @@
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"mainCellBackground"];
     self.backgroundView = bgView;
+        
 }
 /**
  今年
@@ -98,9 +105,9 @@
 - (void)setTopic:(XLTopic *)topic
 {
     _topic = topic;
+    
     // 新浪加V
     self.sinaVView.hidden = !topic.isSina_v;
-    
     // 设置其它控件
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.nameLabel.text = topic.name;
@@ -145,8 +152,22 @@
         self.voiceView.hidden = YES;
         self.pictureView.hidden = YES;
     }
+    
+    
+    // 处理最热评论
+    XLComment *cmt = [topic.top_cmt firstObject];
+    if (cmt) {
+        self.topCmtView.hidden = NO;
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@", cmt.user.username, cmt.content];
+    } else {
+        self.topCmtView.hidden = YES;
+    }
 }
 
+
+/**
+ * 设置底部按钮文字
+ */
 - (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder
 {
     //    NSString *title = nil;

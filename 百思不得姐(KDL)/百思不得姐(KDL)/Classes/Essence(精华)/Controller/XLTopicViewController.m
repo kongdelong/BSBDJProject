@@ -45,7 +45,7 @@
     [self setupRefresh];
 }
 
-static NSString * const XMGTopicCellId = @"topic";
+static NSString * const XLTopicCellId = @"topic";
 - (void)setupTableView
 {
     // 设置内边距
@@ -59,7 +59,7 @@ static NSString * const XMGTopicCellId = @"topic";
     self.tableView.backgroundColor = [UIColor clearColor];
     
     // 注册
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XLTopicCell class]) bundle:nil] forCellReuseIdentifier:XMGTopicCellId];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XLTopicCell class]) bundle:nil] forCellReuseIdentifier:XLTopicCellId];
 }
 
 - (void)setupRefresh
@@ -95,6 +95,7 @@ static NSString * const XMGTopicCellId = @"topic";
         
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
+        
         
         // 字典 -> 模型
         self.topics = [XLTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
@@ -170,7 +171,7 @@ static NSString * const XMGTopicCellId = @"topic";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    XLTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:XMGTopicCellId];
+    XLTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:XLTopicCellId];
     
     cell.topic = self.topics[indexPath.row];
     
