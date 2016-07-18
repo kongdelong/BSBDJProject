@@ -204,5 +204,9 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    //  恢复帖子top_cmt
+    self.topic.top_cmt = self.saved_top_cmt;
+    [self.topic setValue:@0 forKeyPath:@"cellHeight"];
+
 }
 @end
