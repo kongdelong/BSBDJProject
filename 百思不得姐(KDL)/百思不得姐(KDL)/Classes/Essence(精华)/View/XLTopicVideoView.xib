@@ -41,7 +41,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIb-Z4-ZTd">
-                    <rect key="frame" x="135.5" y="71" width="71" height="71"/>
+                    <rect key="frame" x="136" y="71" width="71" height="71"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="GVE-ht-8Aj"/>
                         <constraint firstAttribute="height" constant="71" id="i8m-Ci-ocY"/>

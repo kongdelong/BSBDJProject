@@ -13,7 +13,7 @@
 #import <MJExtension.h>
 #import "XLTopic.h"
 #import "XLTopicCell.h"
-
+#import "XLCommentViewController.h"
 @interface XLTopicViewController ()
 /** 帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
@@ -190,4 +190,44 @@ static NSString * const XLTopicCellId = @"topic";
 
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XLCommentViewController *cvc = [[XLCommentViewController alloc] init];
+    cvc.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:cvc animated:YES];
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

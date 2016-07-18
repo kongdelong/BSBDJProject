@@ -11,4 +11,6 @@
 @interface XLTopicCell : UITableViewCell
 /** 帖子数据 */
 @property (nonatomic, strong) XLTopic *topic;
+
++ (instancetype)cell;
 @end

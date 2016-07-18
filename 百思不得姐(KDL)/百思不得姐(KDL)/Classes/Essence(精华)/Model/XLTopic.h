@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface XLTopic : NSObject
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 名称 */
 @property (nonatomic, copy) NSString *name;
 /** 头像 */

@@ -47,6 +47,11 @@
 
 @implementation XLTopicCell
 
++ (instancetype)cell
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
+
 - (XLTopicPictureView *)pictureView
 {
     if (!_pictureView) {
