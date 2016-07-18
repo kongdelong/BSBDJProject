@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class  XLComment;
 @interface XLTopic : NSObject
 /** id */
 @property (nonatomic, copy) NSString *ID;
@@ -48,8 +48,8 @@
 /** 视频时长 */
 @property (nonatomic, assign) NSInteger videotime;
 
-/** 最热评论(期望这个数组中存放的是XMGComment模型) */
-@property (nonatomic, strong) NSArray *top_cmt;
+/** 最热评论 */
+@property (nonatomic, strong) XLComment *top_cmt;
 /****** 额外的辅助属性 ******/
 
 /** cell的高度 */
