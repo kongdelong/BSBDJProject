@@ -21,7 +21,7 @@ typedef enum {
 #import "UIBarButtonItem+XLExtension.h"
 #import "XLConst.h"
 #import "NSDate+XLExtension.h"
-
+#import "XLConst.h"
 
 #ifdef DEBUG
 #define XLLog(...) NSLog(__VA_ARGS__)

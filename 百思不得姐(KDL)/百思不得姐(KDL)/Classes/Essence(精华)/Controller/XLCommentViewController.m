@@ -14,6 +14,7 @@
 #import <MJExtension.h>
 #import "XLComment.h"
 #import "XLCommentHeaderView.h"
+#import "XLCommentCell.h"
 
 @interface XLCommentViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -24,7 +25,7 @@
 /** 最新评论 */
 @property (nonatomic, strong) NSMutableArray *latestComments;
 /** 保存帖子的top_cmt */
-@property (nonatomic, strong) NSArray *saved_top_cmt;
+@property (nonatomic, strong) XLComment *saved_top_cmt;
 @end
 
 @implementation XLCommentViewController
@@ -41,7 +42,7 @@
     // 创建header
     UIView *header = [[UIView alloc] init];
     // 清空top_cmt
-    if (self.topic.top_cmt.count) {
+    if (self.topic.top_cmt) {
         self.saved_top_cmt = self.topic.top_cmt;
         self.topic.top_cmt = nil;
         [self.topic setValue:@0 forKeyPath:@"cellHeight"];
@@ -77,6 +78,7 @@
     params[@"data_id"] = self.topic.ID;
     params[@"hot"] = @"1";
     
+ 
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         // 最热评论
         self.hotComments = [XLComment mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
@@ -91,15 +93,21 @@
     }];
 }
 
-
+static NSString * const XLCommentId = @"comment";
 - (void)setupBasic
 {
     self.title = @"评论";
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"comment_nav_item_share_icon" highImage:@"comment_nav_item_share_icon_click" target:nil action:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    // cell的高度设置
+#warning ---- 自动高度
+    self.tableView.estimatedRowHeight = 44;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     self.tableView.backgroundColor = XLGlobalBg;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XLCommentCell class]) bundle:nil] forCellReuseIdentifier:XLCommentId];
 }
 
 - (void)keyboardWillChangeFrame:(NSNotification *)note
@@ -156,13 +164,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comment"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"comment"];
-    }
+    XLCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comment"];
     
-    XLComment *comment = [self commentInIndexPath:indexPath];
-    cell.textLabel.text = comment.content;
+    cell.comment = [self commentInIndexPath:indexPath];
     
     return cell;
 }
@@ -205,8 +209,16 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     //  恢复帖子top_cmt
-    self.topic.top_cmt = self.saved_top_cmt;
-    [self.topic setValue:@0 forKeyPath:@"cellHeight"];
-
+    if (self.saved_top_cmt) {
+        self.topic.top_cmt = self.saved_top_cmt;
+        [self.topic setValue:@0 forKeyPath:@"cellHeight"];
+    }
+   
 }
+
 @end
+
+
+
+
+
