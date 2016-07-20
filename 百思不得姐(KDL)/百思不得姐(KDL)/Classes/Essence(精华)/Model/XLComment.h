@@ -19,4 +19,6 @@
 @property (nonatomic, assign) NSInteger like_count;
 /** 用户 */
 @property (nonatomic, strong) XLUser *user;
+/** id */
+@property (nonatomic, copy) NSString *ID;
 @end

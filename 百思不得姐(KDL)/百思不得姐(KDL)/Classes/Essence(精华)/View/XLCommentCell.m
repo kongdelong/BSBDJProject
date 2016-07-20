@@ -28,7 +28,6 @@
 {
     _comment = comment;
     
-    
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:comment.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.sexView.image = [comment.user.sex isEqualToString:XLUserSexMale] ? [UIImage imageNamed:@"Profile_manIcon"] : [UIImage imageNamed:@"Profile_womanIcon"];
     self.contentLabel.text = comment.content;
@@ -44,4 +43,53 @@
 
 }
 
+- (void)setFrame:(CGRect)frame
+{
+    frame.origin.x = XLTopicCellMargin;
+    frame.size.width -= 2 * XLTopicCellMargin;
+    [super setFrame:frame];
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    UIImageView *bgView = [[UIImageView alloc] init];
+    bgView.image = [UIImage imageNamed:@"mainCellBackground"];
+    self.backgroundView = bgView;
+    
+}
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -86,16 +86,17 @@ static NSString * const XLTopicCellId = @"topic";
     params[@"a"] = @"list";
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
-    self.params = params;
+    self.params = params;    // self.params是全局的，永远只存储最后一次请求的参数，之前的请求参数都会被最后一次覆盖掉。
+
     
     // 发送请求
     [[AFHTTPSessionManager manager] POST:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary  *responseObject) {
+        //如果不是用户最近一次发送的请求，就不处理，直接return整个AFN方法，后面failure也不会执行
         if (self.params != params) return;
         
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
-        
         
         // 字典 -> 模型
         self.topics = [XLTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
@@ -151,7 +152,7 @@ static NSString * const XLTopicCellId = @"topic";
         // 结束刷新
         [self.tableView.mj_footer endRefreshing];
         // 设置页码
-        self.page = page;
+        self.page = page; // 能来到这说明本次加载成功，此时将本次页码保存在self.page中，以便下次加载使用。
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (self.params != params) return;

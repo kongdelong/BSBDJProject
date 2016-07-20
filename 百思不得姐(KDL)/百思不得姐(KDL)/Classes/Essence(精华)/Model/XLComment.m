@@ -7,7 +7,14 @@
 //
 
 #import "XLComment.h"
-
+#import <MJExtension.h>
 @implementation XLComment
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"ID":@"id"
+             };
+}
 
 @end
