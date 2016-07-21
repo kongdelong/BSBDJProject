@@ -42,7 +42,13 @@ static UIWindow *window_;
     //        CGRect newFrame = [[UIApplication sharedApplication].keyWindow convertRect:subview.frame fromView:subview.superview];
     
     for (UIScrollView *subView in supview.subviews) {
-        if ([subView isKindOfClass:[UIScrollView class]]) {
+//        CGRect newFrame = [subView.superview convertRect:subView.frame toView:nil];
+//        CGRect winRect = [UIApplication sharedApplication].keyWindow.bounds;
+//        //  判断一个控件是否真正显示在窗口上
+//        BOOL isShowingOnWindow = subView.window == [UIApplication sharedApplication].keyWindow && !subView.isHidden && subView.alpha > 0.01 && CGRectIntersectsRect(newFrame, winRect);
+
+        
+        if ([subView isKindOfClass:[UIScrollView class]] && subView.isShowingOnKeyWindow) {
             CGPoint offset = subView.contentOffset;
             offset.y = -subView.contentInset.top;
             [subView setContentOffset:offset animated:YES];
@@ -53,6 +59,86 @@ static UIWindow *window_;
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

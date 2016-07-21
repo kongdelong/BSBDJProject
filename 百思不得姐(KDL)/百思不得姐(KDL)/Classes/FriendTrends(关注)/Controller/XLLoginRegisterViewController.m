@@ -24,12 +24,17 @@
  *  点击叉叉退出控制器
  */
 - (IBAction)dismiss {
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     [self dismissViewControllerAnimated:YES completion:nil];
+  
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     // 让最后的那个大背景图在最后面
     [self.view sendSubviewToBack:self.bgImage];
     //  文字属性
@@ -59,10 +64,12 @@
         [self.view layoutIfNeeded];
     }];
 }
+#warning ----------
+// iOS 7 开始， 默认情况下状态栏由控制器设置。但是可以恢复以前做法。在info.plist里加一个  View controller-based status bar appearance  设置成 NO 就可以了。让它不基于控制器。不基于控制器的话，就基于applacation  然后在viewdidload中写
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
+//- (UIStatusBarStyle)preferredStatusBarStyle
+//{
+//    return UIStatusBarStyleLightContent;
+//}
 
 @end
