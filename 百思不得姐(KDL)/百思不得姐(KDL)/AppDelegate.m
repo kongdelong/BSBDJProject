@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "XLTabBarViewController.h"
 #import "XLPushGuideView.h"
+#import "XLTopWindow.h"
 @interface AppDelegate ()
 
 @end
@@ -31,6 +32,8 @@
     
     [XLPushGuideView show];
     
+  
+    
     return YES;
 }
 
@@ -50,6 +53,14 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+//       //crash in ios9
+//       [XLTopWindow show];
+    // ok 将代码做调整，加入到下一个loop周期中，再次运行代码，程序正常
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // 添加一个window, 点击这个window, 可以让屏幕上的scrollView滚到最顶部
+        [XLTopWindow show];
+    });
+    //  应该是在ios9中，对应程序启动时的uiwindow处理有了调整。 有网友说，xcode7后，多个uiwindow时，都需要有rootViewController。  从上面的测试过程中，应该不全对，只是在启动过程中，未完全结束时，对多个uiwindow有要求。
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
