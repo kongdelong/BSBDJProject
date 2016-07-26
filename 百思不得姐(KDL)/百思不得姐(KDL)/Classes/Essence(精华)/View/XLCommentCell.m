@@ -23,6 +23,19 @@
 @end
 
 @implementation XLCommentCell
+// 使用uimenucontroller必须实现的方法
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+// 使用uimenucontroller必须实现的方法
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    return NO;
+}
+
+
+
 
 - (void)setComment:(XLComment *)comment
 {
