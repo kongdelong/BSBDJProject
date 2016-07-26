@@ -22,7 +22,8 @@ typedef enum {
 #import "XLConst.h"
 #import "NSDate+XLExtension.h"
 #import "XLConst.h"
-
+#import "UIImage+XLExtension.h"
+#import "UIImageView+XLExtension.h"
 #ifdef DEBUG
 #define XLLog(...) NSLog(__VA_ARGS__)
 #else

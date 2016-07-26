@@ -34,7 +34,7 @@
     }
     self.fansCountLabel.text = fansNumber;
     
-    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.headImageView setHeader:user.header];
     
 }
 

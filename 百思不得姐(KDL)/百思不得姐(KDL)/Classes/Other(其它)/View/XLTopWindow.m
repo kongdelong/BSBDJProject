@@ -56,6 +56,10 @@ static UIWindow *window_;
         // 继续查找子控件
         [self searchScrollViewInView:subView];
     }
+    
+    
+    
+  
 }
 
 @end

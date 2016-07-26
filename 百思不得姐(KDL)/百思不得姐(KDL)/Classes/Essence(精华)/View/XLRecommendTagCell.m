@@ -22,7 +22,8 @@
 {
     _recommentTag = recommentTag;
 
-    [self.imageListImageView sd_setImageWithURL:[NSURL URLWithString:recommentTag.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.imageListImageView setHeader:recommentTag.image_list];
+    
     self.themeNameLabel.text = recommentTag.theme_name;
     
     NSString *subNumber = nil;

@@ -63,6 +63,8 @@
 		521E173F1D404A63002B3056 /* XLTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 521E173E1D404A63002B3056 /* XLTopWindow.m */; };
 		52570DBC1D3DB35F00C69D7D /* XLCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52570DBA1D3DB35F00C69D7D /* XLCommentCell.m */; };
 		52570DBD1D3DB35F00C69D7D /* XLCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52570DBB1D3DB35F00C69D7D /* XLCommentCell.xib */; };
+		52B05B451D473422004D1437 /* UIImage+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B05B441D473422004D1437 /* UIImage+XLExtension.m */; };
+		52B05B481D47343B004D1437 /* UIImageView+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B05B471D47343B004D1437 /* UIImageView+XLExtension.m */; };
 		52BD5C0B1D3C886000BD42B2 /* XLCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD5C091D3C886000BD42B2 /* XLCommentViewController.m */; };
 		52BD5C0C1D3C886000BD42B2 /* XLCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BD5C0A1D3C886000BD42B2 /* XLCommentViewController.xib */; };
 		52BD5C121D3CA13C00BD42B2 /* XLCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD5C111D3CA13C00BD42B2 /* XLCommentHeaderView.m */; };
@@ -180,6 +182,10 @@
 		52570DB91D3DB35F00C69D7D /* XLCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCommentCell.h; sourceTree = "<group>"; };
 		52570DBA1D3DB35F00C69D7D /* XLCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCommentCell.m; sourceTree = "<group>"; };
 		52570DBB1D3DB35F00C69D7D /* XLCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCommentCell.xib; sourceTree = "<group>"; };
+		52B05B431D473422004D1437 /* UIImage+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLExtension.h"; sourceTree = "<group>"; };
+		52B05B441D473422004D1437 /* UIImage+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLExtension.m"; sourceTree = "<group>"; };
+		52B05B461D47343B004D1437 /* UIImageView+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XLExtension.h"; sourceTree = "<group>"; };
+		52B05B471D47343B004D1437 /* UIImageView+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XLExtension.m"; sourceTree = "<group>"; };
 		52BD5C081D3C886000BD42B2 /* XLCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCommentViewController.h; sourceTree = "<group>"; };
 		52BD5C091D3C886000BD42B2 /* XLCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCommentViewController.m; sourceTree = "<group>"; };
 		52BD5C0A1D3C886000BD42B2 /* XLCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCommentViewController.xib; sourceTree = "<group>"; };
@@ -486,6 +492,10 @@
 				14F016371CD70BD000723793 /* UIView+XLExtension.m */,
 				14EE4B011CFAB30B002A28A9 /* NSDate+XLExtension.h */,
 				14EE4B021CFAB30B002A28A9 /* NSDate+XLExtension.m */,
+				52B05B431D473422004D1437 /* UIImage+XLExtension.h */,
+				52B05B441D473422004D1437 /* UIImage+XLExtension.m */,
+				52B05B461D47343B004D1437 /* UIImageView+XLExtension.h */,
+				52B05B471D47343B004D1437 /* UIImageView+XLExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -721,6 +731,8 @@
 				14AD26B91D3228D6008864B4 /* XLComment.m in Sources */,
 				521E173F1D404A63002B3056 /* XLTopWindow.m in Sources */,
 				14523C441CD6521C00F44384 /* main.m in Sources */,
+				52B05B481D47343B004D1437 /* UIImageView+XLExtension.m in Sources */,
+				52B05B451D473422004D1437 /* UIImage+XLExtension.m in Sources */,
 				14EE4AFF1CFAA316002A28A9 /* XLTopicCell.m in Sources */,
 				142D2A3A1CEB3C4200F624E7 /* XLPushGuideView.m in Sources */,
 				14F016451CD70BD000723793 /* XLTabBar.m in Sources */,
