@@ -49,26 +49,26 @@
 
 @implementation XLTabBarViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
++ (void)initialize
+{
     [UINavigationBar appearance];
     // 通过appearance统一设置所有UITabBarItem的文字属性
     // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置
-    NSMutableDictionary *attrs = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
     attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
     
-    NSMutableDictionary *selectAttrs = [[NSMutableDictionary alloc] init];
-    selectAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-    selectAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    selectedAttrs[NSFontAttributeName] = attrs[NSFontAttributeName];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
-    [item setTitleTextAttributes:selectAttrs forState:UIControlStateSelected];
-    
-    
-    
+    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     // 添加子控制器
     [self setupChildVC:[[XLEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];

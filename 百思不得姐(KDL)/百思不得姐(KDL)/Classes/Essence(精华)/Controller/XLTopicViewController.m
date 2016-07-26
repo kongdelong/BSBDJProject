@@ -23,6 +23,9 @@
 @property (nonatomic, copy) NSString *maxtime;
 /** 上一次的请求参数 */
 @property (nonatomic, strong) NSDictionary *params;
+
+/** 上次选中的索引(或者控制器) */
+@property (nonatomic, assign) NSInteger lastSelectedIndex;
 @end
 
 @implementation XLTopicViewController
@@ -60,6 +63,22 @@ static NSString * const XLTopicCellId = @"topic";
     
     // 注册
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XLTopicCell class]) bundle:nil] forCellReuseIdentifier:XLTopicCellId];
+    
+    // 监听tabbar点击的通知
+    [XLNoteCenter addObserver:self selector:@selector(tabBarSelect) name:XMGTabBarDidSelectNotification object:nil];
+}
+
+- (void)tabBarSelect
+{
+    // 如果是连续选中2次, 直接刷新
+    if (self.lastSelectedIndex == self.tabBarController.selectedIndex
+        //        && self.tabBarController.selectedViewController == self.navigationController
+        && self.view.isShowingOnKeyWindow) {
+        [self.tableView.mj_header beginRefreshing];
+    }
+    
+    // 记录这一次选中的索引
+    self.lastSelectedIndex = self.tabBarController.selectedIndex;
 }
 
 - (void)setupRefresh

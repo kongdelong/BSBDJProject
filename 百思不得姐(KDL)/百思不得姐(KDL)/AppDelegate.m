@@ -10,7 +10,7 @@
 #import "XLTabBarViewController.h"
 #import "XLPushGuideView.h"
 #import "XLTopWindow.h"
-@interface AppDelegate ()
+@interface AppDelegate () // <UITabBarControllerDelegate>
 
 @end
 
@@ -31,11 +31,16 @@
     [self.window makeKeyAndVisible];
     
     [XLPushGuideView show];
-    
-  
-    
+        
     return YES;
 }
+
+#pragma mark - <UITabBarControllerDelegate>
+//- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+//{
+//    // 发出一个通知
+//    [XMGNoteCenter postNotificationName:XMGTabBarDidSelectNotification object:nil userInfo:nil];
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
