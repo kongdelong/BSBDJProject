@@ -7,7 +7,9 @@
 //
 
 #import "XLTabBar.h"
-#import "XLPublishView.h"
+#import "XLPublishViewController.h"
+#import "XLNavigationController.h"
+
 @interface XLTabBar ()
 
 /** 发布按钮 */
@@ -36,13 +38,20 @@
 
 - (void)publishClick
 {
-    // 1
+    //
 //    XLPublishView *publish = [XLPublishView publishView];
 //    UIWindow *window = [UIApplication sharedApplication].keyWindow;
 //    publish.frame = window.frame;
 //    [window addSubview:publish];
-    // 2
-    [XLPublishView show];
+    
+    XLPublishViewController *publish = [[XLPublishViewController alloc] init];
+//    XLNavigationController *nav = [[XLNavigationController alloc] initWithRootViewController:publish];
+    // 这里不能使用self来弹出其它控制器,因为self执行了dismiss操作
+    UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [root presentViewController:publish animated:YES completion:nil];
+    
+    
+   
 }
 
 - (void)layoutSubviews

@@ -1,49 +1,27 @@
 //
-//  XLPublishView.m
+//  XLPublishViewController.m
 //  百思不得姐(KDL)
 //
-//  Created by manager on 16/6/26.
+//  Created by manager on 16/8/10.
 //  Copyright © 2016年 kdl. All rights reserved.
 //
 
-#import "XLPublishView.h"
+#import "XLPublishViewController.h"
 #import "XLVerticalButton.h"
 #import <POP.h>
 
 static CGFloat const XLAnimationDelay = 0.1;
 static CGFloat const XLSpringFactor = 10;
-
-@interface XLPublishView ()
+@interface XLPublishViewController ()
 
 @end
 
-@implementation XLPublishView
+@implementation XLPublishViewController
 
-+ (instancetype)publishView
-{
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
-}
-
-static UIWindow *window_;
-+ (void)show
-{
-    // 创建窗口
-    window_ = [[UIWindow alloc] init];
-    window_.frame = [UIScreen mainScreen].bounds;
-    window_.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8];
-    window_.hidden = NO;
-    
-    // 添加发布界面
-    XLPublishView *publishView = [XLPublishView publishView];
-    publishView.frame = window_.bounds;
-    [window_ addSubview:publishView];
-}
-
-- (void)awakeFromNib {
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
     // 不能被点击
-    self.userInteractionEnabled = NO;
-    
+    self.view.userInteractionEnabled = NO;
     // 数据
     NSArray *images = @[@"publish-video", @"publish-picture", @"publish-text", @"publish-audio", @"publish-review", @"publish-offline"];
     NSArray *titles = @[@"发视频", @"发图片", @"发段子", @"发声音", @"审帖", @"离线下载"];
@@ -55,14 +33,14 @@ static UIWindow *window_;
     CGFloat startY = (XLScreenHeight - 2 * buttonH) * 0.5;
     CGFloat startX = 30;
     CGFloat xMargin = (XLScreenWidth - 2 * startX - maxCols * buttonW) / (maxCols - 1);
-
+    
     for (int i = 0; i < images.count; i ++) {
-      
+        
         XLVerticalButton *button = [[XLVerticalButton alloc] init];
         button.tag = i;
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:button];
-          // 设置内容
+        [self.view addSubview:button];
+        // 设置内容
         button.titleLabel.font =[UIFont systemFontOfSize:14];
         [button setImage:[UIImage imageNamed:images[i]] forState:UIControlStateNormal];
         [button setTitle:titles[i] forState:UIControlStateNormal];
@@ -74,7 +52,7 @@ static UIWindow *window_;
         CGFloat buttonX = col * (buttonW + xMargin) + startX;
         CGFloat buttonEndY = startY + row * buttonH;
         CGFloat buttonBeginY = buttonEndY - XLScreenHeight;
-       
+        
         // 按钮动画
         POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
         anim.fromValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonBeginY, buttonW, buttonH)];
@@ -89,8 +67,8 @@ static UIWindow *window_;
     
     // 添加标语
     UIImageView *sloganView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"app_slogan"]];
-    [self addSubview:sloganView];
-    
+    [self.view addSubview:sloganView];
+    sloganView.centerY = -1000;
     // 标语动画
     POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
     CGFloat centX = XLScreenWidth * 0.5;
@@ -103,7 +81,7 @@ static UIWindow *window_;
     anim.springSpeed = XLSpringFactor;
     [anim setCompletionBlock:^(POPAnimation * anim, BOOL finished) {
         // 标语动画执行完毕, 恢复点击事件
-        self.userInteractionEnabled = YES;
+        self.view.userInteractionEnabled = YES;
     }];
     [sloganView pop_addAnimation:anim forKey:nil];
 }
@@ -130,11 +108,11 @@ static UIWindow *window_;
 - (void)cancelWithCompletionBlock:(void(^)())completionBlock
 {
     // 不能被点击
-    self.userInteractionEnabled = NO;
-    int beginIndex = 1;
+    self.view.userInteractionEnabled = NO;
+    int beginIndex = 2;
     
-    for ( int i = beginIndex; i < self.subviews.count; i ++) {
-        UIView *subview = self.subviews[i];
+    for ( int i = beginIndex; i < self.view.subviews.count; i ++) {
+        UIView *subview = self.view.subviews[i];
         //  基本动画
         POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewCenter];
         CGFloat centerY = subview.centerY + XLScreenHeight;
@@ -144,13 +122,13 @@ static UIWindow *window_;
         anim.beginTime = CACurrentMediaTime() + (i - beginIndex) * XLAnimationDelay;
         [subview pop_addAnimation:anim forKey:nil];
         // 监听最后一个动画
-        if (i == self.subviews.count - 1) {
+        if (i == self.view.subviews.count - 1) {
             [anim setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
-                // 销毁窗口
-                window_.hidden = YES;
-                window_ = nil;
+                // 销毁控制器
+                [self dismissViewControllerAnimated:NO completion:nil];
+              
                 // 执行传过来的block
-                 !completionBlock ? : completionBlock();
+                !completionBlock ? : completionBlock();
             }];
         }
     }
@@ -168,20 +146,6 @@ static UIWindow *window_;
 {
     [self cancelWithCompletionBlock:nil];
 }
+
+
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

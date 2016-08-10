@@ -33,12 +33,12 @@
 		145440D41CE0A72B00B56002 /* XLRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145440D21CE0A72B00B56002 /* XLRecommendTagCell.xib */; };
 		145440D71CE0AE7900B56002 /* XLRecommentTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 145440D61CE0AE7900B56002 /* XLRecommentTags.m */; };
 		1466FF461CFAC57000571A87 /* XLTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466FF451CFAC57000571A87 /* XLTopicViewController.m */; };
-		147282F81D1F98050058B286 /* XLPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147282F61D1F98050058B286 /* XLPublishView.m */; };
-		147282F91D1F98050058B286 /* XLPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147282F71D1F98050058B286 /* XLPublishView.xib */; };
+		147282F91D1F98050058B286 /* XLPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147282F71D1F98050058B286 /* XLPublishViewController.xib */; };
 		147CD9671CE85AD10047BD8C /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 147CD9661CE85AD10047BD8C /* XLTextField.m */; };
 		14AD26B61D3228B2008864B4 /* XLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AD26B51D3228B2008864B4 /* XLUser.m */; };
 		14AD26B91D3228D6008864B4 /* XLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AD26B81D3228D6008864B4 /* XLComment.m */; };
 		14C1AD7C1D0BD65100020125 /* XLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C1AD7B1D0BD65100020125 /* XLProgressView.m */; };
+		14E039FB1D5B5A5E0095EF2B /* XLPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E039FA1D5B5A5E0095EF2B /* XLPublishViewController.m */; };
 		14E191F41D0A8C440063DB29 /* XLTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E191F31D0A8C440063DB29 /* XLTopicPictureView.m */; };
 		14E191F61D0A8C520063DB29 /* XLTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E191F51D0A8C520063DB29 /* XLTopicPictureView.xib */; };
 		14EE4AF81CFA8730002A28A9 /* XLTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE4AF71CFA8730002A28A9 /* XLTopic.m */; };
@@ -128,9 +128,7 @@
 		145440D61CE0AE7900B56002 /* XLRecommentTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommentTags.m; sourceTree = "<group>"; };
 		1466FF441CFAC57000571A87 /* XLTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicViewController.h; sourceTree = "<group>"; };
 		1466FF451CFAC57000571A87 /* XLTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicViewController.m; sourceTree = "<group>"; };
-		147282F51D1F98050058B286 /* XLPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLPublishView.h; path = "../../Essence(精华)/Controller/XLPublishView.h"; sourceTree = "<group>"; };
-		147282F61D1F98050058B286 /* XLPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLPublishView.m; path = "../../Essence(精华)/Controller/XLPublishView.m"; sourceTree = "<group>"; };
-		147282F71D1F98050058B286 /* XLPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XLPublishView.xib; path = "../../Essence(精华)/Controller/XLPublishView.xib"; sourceTree = "<group>"; };
+		147282F71D1F98050058B286 /* XLPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XLPublishViewController.xib; path = "../../Essence(精华)/Controller/XLPublishViewController.xib"; sourceTree = "<group>"; };
 		147CD9651CE85AD10047BD8C /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		147CD9661CE85AD10047BD8C /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
 		14AD26B41D3228B2008864B4 /* XLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLUser.h; sourceTree = "<group>"; };
@@ -139,6 +137,8 @@
 		14AD26B81D3228D6008864B4 /* XLComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLComment.m; sourceTree = "<group>"; };
 		14C1AD7A1D0BD65100020125 /* XLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLProgressView.h; sourceTree = "<group>"; };
 		14C1AD7B1D0BD65100020125 /* XLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLProgressView.m; sourceTree = "<group>"; };
+		14E039F91D5B5A5E0095EF2B /* XLPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPublishViewController.h; sourceTree = "<group>"; };
+		14E039FA1D5B5A5E0095EF2B /* XLPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPublishViewController.m; sourceTree = "<group>"; };
 		14E191F21D0A8C440063DB29 /* XLTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicPictureView.h; sourceTree = "<group>"; };
 		14E191F31D0A8C440063DB29 /* XLTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicPictureView.m; sourceTree = "<group>"; };
 		14E191F51D0A8C520063DB29 /* XLTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTopicPictureView.xib; sourceTree = "<group>"; };
@@ -260,9 +260,44 @@
 			path = "百思不得姐(KDL)UITests";
 			sourceTree = "<group>";
 		};
+		14E039EF1D5B584E0095EF2B /* Publish-发布 */ = {
+			isa = PBXGroup;
+			children = (
+				14E039F01D5B584E0095EF2B /*  Controller */,
+				14E039F11D5B584E0095EF2B /* Model */,
+				14E039F21D5B584E0095EF2B /* View */,
+			);
+			path = "Publish-发布";
+			sourceTree = "<group>";
+		};
+		14E039F01D5B584E0095EF2B /*  Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14E039F91D5B5A5E0095EF2B /* XLPublishViewController.h */,
+				14E039FA1D5B5A5E0095EF2B /* XLPublishViewController.m */,
+				147282F71D1F98050058B286 /* XLPublishViewController.xib */,
+			);
+			path = " Controller";
+			sourceTree = "<group>";
+		};
+		14E039F11D5B584E0095EF2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14E039F21D5B584E0095EF2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		14F016191CD70BD000723793 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				14E039EF1D5B584E0095EF2B /* Publish-发布 */,
 				14F0161A1CD70BD000723793 /* Essence(精华) */,
 				14F016201CD70BD000723793 /* FriendTrends(关注) */,
 				14F016261CD70BD000723793 /* Me(我) */,
@@ -507,9 +542,6 @@
 				14F0163A1CD70BD000723793 /* XLTabBarViewController.m */,
 				14F0164C1CD70E6C00723793 /* XLNavigationController.h */,
 				14F0164D1CD70E6C00723793 /* XLNavigationController.m */,
-				147282F51D1F98050058B286 /* XLPublishView.h */,
-				147282F61D1F98050058B286 /* XLPublishView.m */,
-				147282F71D1F98050058B286 /* XLPublishView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -558,6 +590,7 @@
 				14523C3D1CD6521C00F44384 /* Resources */,
 				50251AF872509D32973363C6 /* [CP] Embed Pods Frameworks */,
 				897EBB3DDD4BB49D4535778E /* [CP] Copy Pods Resources */,
+				D1A2CE10FD7A4A699CF9F913 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -634,7 +667,7 @@
 				144684031CE20E0800D37E54 /* XLLoginRegisterViewController.xib in Resources */,
 				52BD5C0C1D3C886000BD42B2 /* XLCommentViewController.xib in Resources */,
 				140300001D2757640094C579 /* XLTopicVideoView.xib in Resources */,
-				147282F91D1F98050058B286 /* XLPublishView.xib in Resources */,
+				147282F91D1F98050058B286 /* XLPublishViewController.xib in Resources */,
 				14461DD91CDA14EF00305DDD /* XLRecommendUserCell.xib in Resources */,
 				14EE4B001CFAA316002A28A9 /* XLTopicCell.xib in Resources */,
 				145440CF1CE0A63B00B56002 /* XLRecommendTagsViewController.xib in Resources */,
@@ -705,6 +738,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL)-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D1A2CE10FD7A4A699CF9F913 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -736,7 +784,6 @@
 				14EE4AFF1CFAA316002A28A9 /* XLTopicCell.m in Sources */,
 				142D2A3A1CEB3C4200F624E7 /* XLPushGuideView.m in Sources */,
 				14F016451CD70BD000723793 /* XLTabBar.m in Sources */,
-				147282F81D1F98050058B286 /* XLPublishView.m in Sources */,
 				147CD9671CE85AD10047BD8C /* XLTextField.m in Sources */,
 				140EC83E1CD8CCD6007A6FC1 /* XLRecommendCatogoryCell.m in Sources */,
 				14461DD41CDA113800305DDD /* XLRecommendUser.m in Sources */,
@@ -750,6 +797,7 @@
 				140EC8421CD8D134007A6FC1 /* XLRecommendCategory.m in Sources */,
 				14EE4AFB1CFA9B90002A28A9 /* XLConst.m in Sources */,
 				14F016571CD717FB00723793 /* XLEssenceViewController.m in Sources */,
+				14E039FB1D5B5A5E0095EF2B /* XLPublishViewController.m in Sources */,
 				52BD5C121D3CA13C00BD42B2 /* XLCommentHeaderView.m in Sources */,
 				14F0165F1CD7248900723793 /* XLRecommendViewController.m in Sources */,
 				144684061CE2130300D37E54 /* XLVerticalButton.m in Sources */,
