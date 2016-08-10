@@ -79,9 +79,8 @@
     
     [self setupChildVC:[[XLMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 
-   //  更换tabBar
-    [self setValue:[[XLTabBar alloc] init] forKey:@"tabBar"];
-
+    // 更换tabBar
+    [self setValue:[[XLTabBar alloc] init] forKeyPath:@"tabBar"];
 }
 
 /**
