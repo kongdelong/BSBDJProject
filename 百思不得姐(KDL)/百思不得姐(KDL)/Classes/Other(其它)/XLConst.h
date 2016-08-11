@@ -30,3 +30,24 @@ UIKIT_EXTERN NSString * const XMGTabBarDidSelectNotification;
 UIKIT_EXTERN NSString * const XMGSelectedControllerIndexKey;
 /** tabBar被选中的通知 - 被选中的控制器 key */
 UIKIT_EXTERN NSString * const XMGSelectedControllerKey;
+
+
+/** 标签-间距 */
+UIKIT_EXTERN CGFloat const XLTagMargin;
+UIKIT_EXTERN CGFloat const XLTagH;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

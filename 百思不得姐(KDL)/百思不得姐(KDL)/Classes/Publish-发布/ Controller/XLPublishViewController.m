@@ -9,7 +9,8 @@
 #import "XLPublishViewController.h"
 #import "XLVerticalButton.h"
 #import <POP.h>
-
+#import "XLPostWordViewController.h"
+#import "XLNavigationController.h"
 static CGFloat const XLAnimationDelay = 0.1;
 static CGFloat const XLSpringFactor = 10;
 @interface XLPublishViewController ()
@@ -93,6 +94,12 @@ static CGFloat const XLSpringFactor = 10;
             XLLog(@"发视频");
         } else if (button.tag == 1) {
             XLLog(@"发图片");
+        } else if (button.tag == 2){
+            XLPostWordViewController *postWord = [[XLPostWordViewController alloc] init];
+            XLNavigationController *nav = [[XLNavigationController alloc] initWithRootViewController:postWord];
+             // 这里不能使用self来弹出其他控制器, 因为self执行了dismiss操作
+            UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+            [root presentViewController:nav animated:YES completion:nil];
         }
     }];
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00E43AF6C32ECA5BABBD9BD8 /* libPods-百思不得姐(KDL).a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EDD2AF0F47E4C216B9FB25 /* libPods-百思不得姐(KDL).a */; };
 		140300001D2757640094C579 /* XLTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1403FFFF1D2757640094C579 /* XLTopicVideoView.xib */; };
 		1403FFF91D274B730094C579 /* XLTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FFF81D274B730094C579 /* XLTopicVoiceView.m */; };
 		1403FFFB1D274B820094C579 /* XLTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */; };
@@ -63,12 +64,18 @@
 		521E173F1D404A63002B3056 /* XLTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 521E173E1D404A63002B3056 /* XLTopWindow.m */; };
 		52570DBC1D3DB35F00C69D7D /* XLCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52570DBA1D3DB35F00C69D7D /* XLCommentCell.m */; };
 		52570DBD1D3DB35F00C69D7D /* XLCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52570DBB1D3DB35F00C69D7D /* XLCommentCell.xib */; };
+		52667C9D1D5BFEAC006F5DA6 /* XLPostWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52667C9C1D5BFEAC006F5DA6 /* XLPostWordViewController.m */; };
+		52667CA01D5C033D006F5DA6 /* XLPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52667C9F1D5C033D006F5DA6 /* XLPlaceholderTextView.m */; };
+		52667CA41D5C0919006F5DA6 /* XLAddTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52667CA21D5C0919006F5DA6 /* XLAddTagViewController.m */; };
+		52667CA81D5C0978006F5DA6 /* XLAddTagToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52667CA71D5C0978006F5DA6 /* XLAddTagToolbar.m */; };
+		52667CAA1D5C0984006F5DA6 /* XLAddTagToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52667CA91D5C0984006F5DA6 /* XLAddTagToolbar.xib */; };
+		52667CAD1D5C27ED006F5DA6 /* XLTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52667CAC1D5C27ED006F5DA6 /* XLTagButton.m */; };
+		52667CB01D5C5125006F5DA6 /* XLTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 52667CAF1D5C5125006F5DA6 /* XLTagTextField.m */; };
 		52B05B451D473422004D1437 /* UIImage+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B05B441D473422004D1437 /* UIImage+XLExtension.m */; };
 		52B05B481D47343B004D1437 /* UIImageView+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B05B471D47343B004D1437 /* UIImageView+XLExtension.m */; };
 		52BD5C0B1D3C886000BD42B2 /* XLCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD5C091D3C886000BD42B2 /* XLCommentViewController.m */; };
 		52BD5C0C1D3C886000BD42B2 /* XLCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BD5C0A1D3C886000BD42B2 /* XLCommentViewController.xib */; };
 		52BD5C121D3CA13C00BD42B2 /* XLCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD5C111D3CA13C00BD42B2 /* XLCommentHeaderView.m */; };
-		9765FB5CF36C85F34873ADAB /* libPods-百思不得姐(KDL).a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E62F77AD600F4E4715D0F7D /* libPods-百思不得姐(KDL).a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0021FA42E37865B88EEDFB42 /* Pods-百思不得姐(KDL).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐(KDL).release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL).release.xcconfig"; sourceTree = "<group>"; };
 		1403FFF71D274B730094C579 /* XLTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopicVoiceView.h; sourceTree = "<group>"; };
 		1403FFF81D274B730094C579 /* XLTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopicVoiceView.m; sourceTree = "<group>"; };
 		1403FFFA1D274B820094C579 /* XLTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTopicVoiceView.xib; sourceTree = "<group>"; };
@@ -176,12 +182,25 @@
 		14F0165C1CD7248900723793 /* XLRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecommendViewController.h; sourceTree = "<group>"; };
 		14F0165D1CD7248900723793 /* XLRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecommendViewController.m; sourceTree = "<group>"; };
 		14F0165E1CD7248900723793 /* XLRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLRecommendViewController.xib; sourceTree = "<group>"; };
-		2AFFDD4C7A50E5026DE78E3B /* Pods-百思不得姐(KDL).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐(KDL).debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL).debug.xcconfig"; sourceTree = "<group>"; };
+		3147BEE098C1E249A36BA392 /* Pods-百思不得姐(KDL).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐(KDL).release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL).release.xcconfig"; sourceTree = "<group>"; };
 		521E173D1D404A63002B3056 /* XLTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopWindow.h; sourceTree = "<group>"; };
 		521E173E1D404A63002B3056 /* XLTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopWindow.m; sourceTree = "<group>"; };
 		52570DB91D3DB35F00C69D7D /* XLCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCommentCell.h; sourceTree = "<group>"; };
 		52570DBA1D3DB35F00C69D7D /* XLCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCommentCell.m; sourceTree = "<group>"; };
 		52570DBB1D3DB35F00C69D7D /* XLCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCommentCell.xib; sourceTree = "<group>"; };
+		52667C9B1D5BFEAC006F5DA6 /* XLPostWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPostWordViewController.h; sourceTree = "<group>"; };
+		52667C9C1D5BFEAC006F5DA6 /* XLPostWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPostWordViewController.m; sourceTree = "<group>"; };
+		52667C9E1D5C033D006F5DA6 /* XLPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLPlaceholderTextView.h; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLPlaceholderTextView.h"; sourceTree = SOURCE_ROOT; };
+		52667C9F1D5C033D006F5DA6 /* XLPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLPlaceholderTextView.m; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLPlaceholderTextView.m"; sourceTree = SOURCE_ROOT; };
+		52667CA11D5C0919006F5DA6 /* XLAddTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLAddTagViewController.h; sourceTree = "<group>"; };
+		52667CA21D5C0919006F5DA6 /* XLAddTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLAddTagViewController.m; sourceTree = "<group>"; };
+		52667CA61D5C0978006F5DA6 /* XLAddTagToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLAddTagToolbar.h; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLAddTagToolbar.h"; sourceTree = SOURCE_ROOT; };
+		52667CA71D5C0978006F5DA6 /* XLAddTagToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLAddTagToolbar.m; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLAddTagToolbar.m"; sourceTree = SOURCE_ROOT; };
+		52667CA91D5C0984006F5DA6 /* XLAddTagToolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XLAddTagToolbar.xib; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLAddTagToolbar.xib"; sourceTree = SOURCE_ROOT; };
+		52667CAB1D5C27ED006F5DA6 /* XLTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLTagButton.h; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLTagButton.h"; sourceTree = SOURCE_ROOT; };
+		52667CAC1D5C27ED006F5DA6 /* XLTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLTagButton.m; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLTagButton.m"; sourceTree = SOURCE_ROOT; };
+		52667CAE1D5C5125006F5DA6 /* XLTagTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLTagTextField.h; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLTagTextField.h"; sourceTree = SOURCE_ROOT; };
+		52667CAF1D5C5125006F5DA6 /* XLTagTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLTagTextField.m; path = "百思不得姐(KDL)/Classes/Publish-发布/ Controller/XLTagTextField.m"; sourceTree = SOURCE_ROOT; };
 		52B05B431D473422004D1437 /* UIImage+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLExtension.h"; sourceTree = "<group>"; };
 		52B05B441D473422004D1437 /* UIImage+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLExtension.m"; sourceTree = "<group>"; };
 		52B05B461D47343B004D1437 /* UIImageView+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XLExtension.h"; sourceTree = "<group>"; };
@@ -191,7 +210,8 @@
 		52BD5C0A1D3C886000BD42B2 /* XLCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCommentViewController.xib; sourceTree = "<group>"; };
 		52BD5C101D3CA13C00BD42B2 /* XLCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCommentHeaderView.h; sourceTree = "<group>"; };
 		52BD5C111D3CA13C00BD42B2 /* XLCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCommentHeaderView.m; sourceTree = "<group>"; };
-		5E62F77AD600F4E4715D0F7D /* libPods-百思不得姐(KDL).a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐(KDL).a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1EDD2AF0F47E4C216B9FB25 /* libPods-百思不得姐(KDL).a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐(KDL).a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E7E8CF1B4738AD92454D62 /* Pods-百思不得姐(KDL).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐(KDL).debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9765FB5CF36C85F34873ADAB /* libPods-百思不得姐(KDL).a in Frameworks */,
+				00E43AF6C32ECA5BABBD9BD8 /* libPods-百思不得姐(KDL).a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +239,8 @@
 				14523C411CD6521C00F44384 /* 百思不得姐(KDL) */,
 				14523C5B1CD6521C00F44384 /* 百思不得姐(KDL)UITests */,
 				14523C401CD6521C00F44384 /* Products */,
-				BCB2200798A3A624B7A86798 /* Pods */,
-				4405974DD019BBB5E41FF5D4 /* Frameworks */,
+				6679FF20A9F444E1C21D59FD /* Pods */,
+				4395333648555AD048A79B14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +296,10 @@
 				14E039F91D5B5A5E0095EF2B /* XLPublishViewController.h */,
 				14E039FA1D5B5A5E0095EF2B /* XLPublishViewController.m */,
 				147282F71D1F98050058B286 /* XLPublishViewController.xib */,
+				52667C9B1D5BFEAC006F5DA6 /* XLPostWordViewController.h */,
+				52667C9C1D5BFEAC006F5DA6 /* XLPostWordViewController.m */,
+				52667CA11D5C0919006F5DA6 /* XLAddTagViewController.h */,
+				52667CA21D5C0919006F5DA6 /* XLAddTagViewController.m */,
 			);
 			path = " Controller";
 			sourceTree = "<group>";
@@ -290,6 +314,15 @@
 		14E039F21D5B584E0095EF2B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52667C9E1D5C033D006F5DA6 /* XLPlaceholderTextView.h */,
+				52667C9F1D5C033D006F5DA6 /* XLPlaceholderTextView.m */,
+				52667CA61D5C0978006F5DA6 /* XLAddTagToolbar.h */,
+				52667CA71D5C0978006F5DA6 /* XLAddTagToolbar.m */,
+				52667CA91D5C0984006F5DA6 /* XLAddTagToolbar.xib */,
+				52667CAB1D5C27ED006F5DA6 /* XLTagButton.h */,
+				52667CAC1D5C27ED006F5DA6 /* XLTagButton.m */,
+				52667CAE1D5C5125006F5DA6 /* XLTagTextField.h */,
+				52667CAF1D5C5125006F5DA6 /* XLTagTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -560,19 +593,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		4405974DD019BBB5E41FF5D4 /* Frameworks */ = {
+		4395333648555AD048A79B14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E62F77AD600F4E4715D0F7D /* libPods-百思不得姐(KDL).a */,
+				B1EDD2AF0F47E4C216B9FB25 /* libPods-百思不得姐(KDL).a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BCB2200798A3A624B7A86798 /* Pods */ = {
+		6679FF20A9F444E1C21D59FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2AFFDD4C7A50E5026DE78E3B /* Pods-百思不得姐(KDL).debug.xcconfig */,
-				0021FA42E37865B88EEDFB42 /* Pods-百思不得姐(KDL).release.xcconfig */,
+				B9E7E8CF1B4738AD92454D62 /* Pods-百思不得姐(KDL).debug.xcconfig */,
+				3147BEE098C1E249A36BA392 /* Pods-百思不得姐(KDL).release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -590,7 +623,6 @@
 				14523C3D1CD6521C00F44384 /* Resources */,
 				50251AF872509D32973363C6 /* [CP] Embed Pods Frameworks */,
 				897EBB3DDD4BB49D4535778E /* [CP] Copy Pods Resources */,
-				D1A2CE10FD7A4A699CF9F913 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -675,6 +707,7 @@
 				145440D41CE0A72B00B56002 /* XLRecommendTagCell.xib in Resources */,
 				142D2A3C1CEB3C5300F624E7 /* XLPushGuideView.xib in Resources */,
 				52570DBD1D3DB35F00C69D7D /* XLCommentCell.xib in Resources */,
+				52667CAA1D5C0984006F5DA6 /* XLAddTagToolbar.xib in Resources */,
 				1403FFFB1D274B820094C579 /* XLTopicVoiceView.xib in Resources */,
 				14EF36BE1D0BD03300917838 /* XLShowPictureViewController.xib in Resources */,
 				14F016601CD7248900723793 /* XLRecommendViewController.xib in Resources */,
@@ -738,21 +771,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL)-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1A2CE10FD7A4A699CF9F913 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -760,12 +778,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52667CB01D5C5125006F5DA6 /* XLTagTextField.m in Sources */,
 				52BD5C0B1D3C886000BD42B2 /* XLCommentViewController.m in Sources */,
 				14EF36BD1D0BD03300917838 /* XLShowPictureViewController.m in Sources */,
 				14F016401CD70BD000723793 /* XLMeViewController.m in Sources */,
 				14EE4AF81CFA8730002A28A9 /* XLTopic.m in Sources */,
+				52667CAD1D5C27ED006F5DA6 /* XLTagButton.m in Sources */,
 				14F0163F1CD70BD000723793 /* XLFriendTrendsViewController.m in Sources */,
 				14523C471CD6521C00F44384 /* AppDelegate.m in Sources */,
+				52667CA81D5C0978006F5DA6 /* XLAddTagToolbar.m in Sources */,
 				14F016411CD70BD000723793 /* XLNewViewController.m in Sources */,
 				144684021CE20E0800D37E54 /* XLLoginRegisterViewController.m in Sources */,
 				1466FF461CFAC57000571A87 /* XLTopicViewController.m in Sources */,
@@ -794,13 +815,16 @@
 				145440D31CE0A72B00B56002 /* XLRecommendTagCell.m in Sources */,
 				145440CE1CE0A63B00B56002 /* XLRecommendTagsViewController.m in Sources */,
 				14EE4B031CFAB30B002A28A9 /* NSDate+XLExtension.m in Sources */,
+				52667C9D1D5BFEAC006F5DA6 /* XLPostWordViewController.m in Sources */,
 				140EC8421CD8D134007A6FC1 /* XLRecommendCategory.m in Sources */,
 				14EE4AFB1CFA9B90002A28A9 /* XLConst.m in Sources */,
 				14F016571CD717FB00723793 /* XLEssenceViewController.m in Sources */,
 				14E039FB1D5B5A5E0095EF2B /* XLPublishViewController.m in Sources */,
 				52BD5C121D3CA13C00BD42B2 /* XLCommentHeaderView.m in Sources */,
 				14F0165F1CD7248900723793 /* XLRecommendViewController.m in Sources */,
+				52667CA01D5C033D006F5DA6 /* XLPlaceholderTextView.m in Sources */,
 				144684061CE2130300D37E54 /* XLVerticalButton.m in Sources */,
+				52667CA41D5C0919006F5DA6 /* XLAddTagViewController.m in Sources */,
 				14AD26B61D3228B2008864B4 /* XLUser.m in Sources */,
 				14C1AD7C1D0BD65100020125 /* XLProgressView.m in Sources */,
 			);
@@ -911,7 +935,7 @@
 		};
 		14523C621CD6521C00F44384 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AFFDD4C7A50E5026DE78E3B /* Pods-百思不得姐(KDL).debug.xcconfig */;
+			baseConfigurationReference = B9E7E8CF1B4738AD92454D62 /* Pods-百思不得姐(KDL).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -927,7 +951,7 @@
 		};
 		14523C631CD6521C00F44384 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0021FA42E37865B88EEDFB42 /* Pods-百思不得姐(KDL).release.xcconfig */;
+			baseConfigurationReference = 3147BEE098C1E249A36BA392 /* Pods-百思不得姐(KDL).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
