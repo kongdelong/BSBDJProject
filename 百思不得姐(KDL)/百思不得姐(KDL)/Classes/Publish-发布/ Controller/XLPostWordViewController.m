@@ -23,13 +23,13 @@
     [self setupNav];
     [self setupTextView];
     [self setupToolbar];
-
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
+    [self.view endEditing:YES];
+
     [self.textView becomeFirstResponder];
 }
 

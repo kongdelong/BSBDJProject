@@ -62,6 +62,7 @@
 		14F0165F1CD7248900723793 /* XLRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F0165D1CD7248900723793 /* XLRecommendViewController.m */; };
 		14F016601CD7248900723793 /* XLRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F0165E1CD7248900723793 /* XLRecommendViewController.xib */; };
 		521E173F1D404A63002B3056 /* XLTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 521E173E1D404A63002B3056 /* XLTopWindow.m */; };
+		5221974C1D61431E005EBB9A /* XLLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221974B1D61431E005EBB9A /* XLLoginTool.m */; };
 		52570DBC1D3DB35F00C69D7D /* XLCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52570DBA1D3DB35F00C69D7D /* XLCommentCell.m */; };
 		52570DBD1D3DB35F00C69D7D /* XLCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52570DBB1D3DB35F00C69D7D /* XLCommentCell.xib */; };
 		52667C9D1D5BFEAC006F5DA6 /* XLPostWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52667C9C1D5BFEAC006F5DA6 /* XLPostWordViewController.m */; };
@@ -185,6 +186,8 @@
 		3147BEE098C1E249A36BA392 /* Pods-百思不得姐(KDL).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐(KDL).release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐(KDL)/Pods-百思不得姐(KDL).release.xcconfig"; sourceTree = "<group>"; };
 		521E173D1D404A63002B3056 /* XLTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTopWindow.h; sourceTree = "<group>"; };
 		521E173E1D404A63002B3056 /* XLTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTopWindow.m; sourceTree = "<group>"; };
+		5221974A1D61431E005EBB9A /* XLLoginTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLLoginTool.h; sourceTree = "<group>"; };
+		5221974B1D61431E005EBB9A /* XLLoginTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLLoginTool.m; sourceTree = "<group>"; };
 		52570DB91D3DB35F00C69D7D /* XLCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCommentCell.h; sourceTree = "<group>"; };
 		52570DBA1D3DB35F00C69D7D /* XLCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCommentCell.m; sourceTree = "<group>"; };
 		52570DBB1D3DB35F00C69D7D /* XLCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCommentCell.xib; sourceTree = "<group>"; };
@@ -564,6 +567,8 @@
 				52B05B441D473422004D1437 /* UIImage+XLExtension.m */,
 				52B05B461D47343B004D1437 /* UIImageView+XLExtension.h */,
 				52B05B471D47343B004D1437 /* UIImageView+XLExtension.m */,
+				5221974A1D61431E005EBB9A /* XLLoginTool.h */,
+				5221974B1D61431E005EBB9A /* XLLoginTool.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -811,6 +816,7 @@
 				14F0164E1CD70E6C00723793 /* XLNavigationController.m in Sources */,
 				14F016421CD70BD000723793 /* UIBarButtonItem+XLExtension.m in Sources */,
 				140EC8371CD8BCF3007A6FC1 /* Foundation+Log.m in Sources */,
+				5221974C1D61431E005EBB9A /* XLLoginTool.m in Sources */,
 				14461DD81CDA14EF00305DDD /* XLRecommendUserCell.m in Sources */,
 				145440D31CE0A72B00B56002 /* XLRecommendTagCell.m in Sources */,
 				145440CE1CE0A63B00B56002 /* XLRecommendTagsViewController.m in Sources */,

@@ -39,6 +39,8 @@
     [self.topView addSubview:addButton];
     self.addButton = addButton;
 
+    // 默认就拥有2个标签
+    [self createTagLabels:@[@"吐槽", @"糗事"]];
 }
 
 - (void)addButtonClick
@@ -115,8 +117,10 @@
         self.addButton.x = 0;
         self.addButton.y = CGRectGetMaxY(lastTagLabel.frame) + XLTagMargin;
     }
-    
-    XLLog(@"%zd", self.tagLabels.count);
+    // 整体高度
+    CGFloat oldH = self.height;
+    self.height = CGRectGetMaxY(self.addButton.frame) + 45;
+    self.y -= self.height - oldH;
     
 }
 

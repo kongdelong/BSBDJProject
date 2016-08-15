@@ -61,11 +61,16 @@
 /**
  * 更新占位文字的尺寸
  */
-- (void)updatePlaceholderLabelSize
+- (void)layoutSubviews
 {
-    CGSize maxSize = CGSizeMake(XLScreenWidth - 2 * self.placeholderLabel.x, MAXFLOAT);
-    self.placeholderLabel.size = [self.placeholder boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil].size;
-//    self.placeholderLabel.backgroundColor = [UIColor redColor];
+   [super layoutSubviews];
+    
+//    CGSize maxSize = CGSizeMake(XLScreenWidth - 2 * self.placeholderLabel.x, MAXFLOAT);
+//    self.placeholderLabel.size = [self.placeholder boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil].size;
+////    self.placeholderLabel.backgroundColor = [UIColor redColor];
+    
+    self.placeholderLabel.width = self.width - 2 * self.placeholderLabel.x;
+    [self.placeholderLabel sizeToFit];
 }
 
 #pragma mark - 重写setter
@@ -75,21 +80,21 @@
     
     self.placeholderLabel.textColor = placeholderColor;
 
-     [self updatePlaceholderLabelSize];
+    [self setNeedsLayout];
 }
 
 - (void)setPlaceholder:(NSString *)placeholder
 {
     _placeholder = [placeholder copy];
     self.placeholderLabel.text = placeholder;
-    [self updatePlaceholderLabelSize];
+    [self setNeedsLayout];
 }
 
 - (void)setFont:(UIFont *)font
 {
     [super setFont:font];
     self.placeholderLabel.font = font;
-    [self updatePlaceholderLabelSize];
+    [self setNeedsLayout];
 }
 
 - (void)setText:(NSString *)text

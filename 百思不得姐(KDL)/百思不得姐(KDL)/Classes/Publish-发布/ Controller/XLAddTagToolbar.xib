@@ -12,8 +12,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDc-4Z-Spl" userLabel="顶部">
-                    <rect key="frame" x="0.0" y="0.0" width="345" height="80"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="5" y="0.0" width="335" height="70"/>
+                    <color key="backgroundColor" red="0.99475720850000005" green="1" blue="0.26424375369999997" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMR-IO-Jex" userLabel="底部">
                     <rect key="frame" x="0.0" y="80" width="345" height="35"/>
@@ -52,18 +52,24 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.52174960739999998" green="0.20417729949999999" blue="0.71488465310000004" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="bDc-4Z-Spl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9Ea-AB-EUH"/>
+                <constraint firstItem="bDc-4Z-Spl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="9Ea-AB-EUH"/>
                 <constraint firstAttribute="trailing" secondItem="tMR-IO-Jex" secondAttribute="trailing" id="CrG-L3-Bp4"/>
                 <constraint firstAttribute="bottom" secondItem="tMR-IO-Jex" secondAttribute="bottom" id="GhK-qS-qCm"/>
-                <constraint firstItem="tMR-IO-Jex" firstAttribute="top" secondItem="bDc-4Z-Spl" secondAttribute="bottom" id="JpA-Hl-Zec"/>
-                <constraint firstAttribute="trailing" secondItem="bDc-4Z-Spl" secondAttribute="trailing" id="PGN-Vq-3Ls"/>
+                <constraint firstItem="tMR-IO-Jex" firstAttribute="top" secondItem="bDc-4Z-Spl" secondAttribute="bottom" constant="10" id="JpA-Hl-Zec"/>
+                <constraint firstAttribute="trailing" secondItem="bDc-4Z-Spl" secondAttribute="trailing" constant="5" id="PGN-Vq-3Ls"/>
+                <constraint firstAttribute="top" secondItem="bDc-4Z-Spl" secondAttribute="top" id="PMq-hQ-eB8"/>
                 <constraint firstItem="bDc-4Z-Spl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bdi-20-SyC"/>
                 <constraint firstItem="tMR-IO-Jex" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dbl-ci-fgi"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="bdi-20-SyC"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="topView" destination="bDc-4Z-Spl" id="E8P-be-5pP"/>
             </connections>

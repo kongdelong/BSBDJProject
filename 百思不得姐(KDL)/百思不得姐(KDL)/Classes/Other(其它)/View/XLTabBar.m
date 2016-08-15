@@ -62,7 +62,6 @@
     // 标记按钮是否已经添加过监听器
     static BOOL added = NO;
 
-    
  
     CGFloat width = self.width;
     CGFloat height = self.height;

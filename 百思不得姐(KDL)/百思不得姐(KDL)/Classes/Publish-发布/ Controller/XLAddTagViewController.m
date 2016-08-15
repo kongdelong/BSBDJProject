@@ -51,21 +51,67 @@
     return _addButton;
 }
 
+- (UIView *)contentView
+{
+    if (!_contentView) {
+        UIView *contentView = [[UIView alloc] init];
+        [self.view addSubview:contentView];
+        self.contentView = contentView;
+    }
+    return _contentView;
+}
+
+- (XLTagTextField *)textField
+{
+    if (!_textField) {
+        __weak typeof(self) weakSelf = self;
+        XLTagTextField *textField = [[XLTagTextField alloc] init];
+        textField.width = self.contentView.width;
+        textField.deleteBlock = ^{
+            if (weakSelf.textField.hasText) return;
+            [weakSelf tagButtonClick:[weakSelf.tagButtons lastObject]];
+        };
+        
+        textField.delegate = self;
+        [textField addTarget:self action:@selector(textDidChange) forControlEvents:UIControlEventEditingChanged];
+        [textField becomeFirstResponder];
+        [self.contentView addSubview:textField];
+        self.textField = textField;
+    }
+    return _textField;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNav];
-    [self setupContentView];
-    [self setupTextFiled];
+    
+
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    self.contentView.x = XLTopicCellMargin;
+    self.contentView.width = self.view.frame.size.width - 2 * self.contentView.x;
+    self.contentView.y = 64 + XLTopicCellMargin;
+    self.contentView.height = XLScreenHeight;
+
     [self setupTags];
 }
 
+
+
 - (void)setupTags
 {
-    for (NSString *tag in self.tags) {
-        self.textField.text = tag;
-        [self addButtonClick];
+    // 加上这个if的意思是因为viewDidLayoutSubviews 方法可能会调用多调。在这个方法里调用了setupTags，防止些方法被调用多次
+    if (self.tags.count) {
+        for (NSString *tag in self.tags) {
+            self.textField.text = tag;
+            [self addButtonClick];
+        }
+        self.tags = nil;
     }
+  
 }
 
 - (void)setupNav
@@ -73,35 +119,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"添加标签";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(done)];
-}
-
-- (void)setupContentView
-{
-    UIView *contentView = [[UIView alloc] init];
-    contentView.x = XLTopicCellMargin;
-    contentView.width = self.view.frame.size.width - 2 * contentView.x;
-    contentView.y = 64 + XLTopicCellMargin;
-    contentView.height = XLScreenHeight;
-    [self.view addSubview:contentView];
-    self.contentView = contentView;
-}
-
-- (void)setupTextFiled
-{
-    __weak typeof(self) weakSelf = self;
-    XLTagTextField *textField = [[XLTagTextField alloc] init];
-    textField.width = self.contentView.width;
-    textField.deleteBlock = ^{
-        if (weakSelf.textField.hasText) return;
-        [weakSelf tagButtonClick:[weakSelf.tagButtons lastObject]];
-    };
-    
-    textField.delegate = self;
-    [textField addTarget:self action:@selector(textDidChange) forControlEvents:UIControlEventEditingChanged];
-    [textField becomeFirstResponder];
-    [self.contentView addSubview:textField];
-    self.textField = textField;
-    
 }
 
 - (void)textDidChange
@@ -132,15 +149,14 @@
     }
 }
 
-  
 - (void)done
 {
       // 传递tags给这个block
     NSArray *tags = [self.tagButtons valueForKeyPath:@"currentTitle"];
     !self.tagsBlock ? : self.tagsBlock(tags);
     [self.navigationController popViewControllerAnimated:YES];
-
 }
+
 #pragma mark - 监听按钮点击
 /**
  * 监听"添加标签"按钮点击

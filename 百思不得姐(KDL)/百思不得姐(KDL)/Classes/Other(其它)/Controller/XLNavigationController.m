@@ -14,11 +14,7 @@
 
 @implementation XLNavigationController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-}
+
 /**
  * 当第一次使用这个类的时候会调用一次
  */
@@ -28,7 +24,29 @@
     //    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
     UINavigationBar *bar = [UINavigationBar appearance];
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+    // 设置item
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    // UIControlStateNormal
+    NSMutableDictionary *itemAttrs = [NSMutableDictionary dictionary];
+    itemAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    itemAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17];
+    [item setTitleTextAttributes:itemAttrs forState:UIControlStateNormal];
+    // UIControlStateDisabled
+    NSMutableDictionary *itemDisabledAttrs = [NSMutableDictionary dictionary];
+    itemDisabledAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    [item setTitleTextAttributes:itemDisabledAttrs forState:UIControlStateDisabled];
+
 }
+//?
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    
+//    //    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+//    
+//    // 如果滑动移除控制器的功能失效，清空代理(让导航控制器重新设置这个功能)
+//    self.interactivePopGestureRecognizer.delegate = nil;
+//}
 
 /**
  * 可以在这个方法中拦截所有push进来的控制器
