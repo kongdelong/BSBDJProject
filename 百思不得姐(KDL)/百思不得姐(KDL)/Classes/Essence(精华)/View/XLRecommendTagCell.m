@@ -22,6 +22,9 @@
 {
     _recommentTag = recommentTag;
 
+    
+       
+    
     [self.imageListImageView setHeader:recommentTag.image_list];
     
     self.themeNameLabel.text = recommentTag.theme_name;

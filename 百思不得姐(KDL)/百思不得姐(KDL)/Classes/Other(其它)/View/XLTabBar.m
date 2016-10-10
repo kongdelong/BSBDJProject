@@ -100,7 +100,7 @@
 - (void)buttonClick
 {
     // 发出一个通知
-    [XLNoteCenter postNotificationName:XMGTabBarDidSelectNotification object:nil userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"XMGTabBarDidSelectNotification" object:nil userInfo:nil];
 }
 
 

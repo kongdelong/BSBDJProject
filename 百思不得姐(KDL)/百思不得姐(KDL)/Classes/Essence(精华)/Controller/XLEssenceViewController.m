@@ -45,8 +45,6 @@
 - (void)setupChildVces
 {
     
-  
-    
     XLTopicViewController *all = [[XLTopicViewController alloc] init];
     all.title = @"全部";
       all.type = XLTopicTypeAll;

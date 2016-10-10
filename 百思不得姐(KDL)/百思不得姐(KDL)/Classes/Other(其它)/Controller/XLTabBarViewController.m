@@ -88,14 +88,12 @@
  */
 - (void)setupChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectImage
 {
-
     // 设置文字和图片
     vc.navigationItem.title = title;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
 
-  
     // 包装一个导航控制器，添加导航控制器为tabbarcontroller的子控制器
     XLNavigationController *nav = [[XLNavigationController alloc] initWithRootViewController:vc];
 
